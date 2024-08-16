@@ -1,15 +1,15 @@
 const prompts = require("./prompts.json");
 const users = require("./users.json");
+
 const promptSchema = {
   prompt: { type: String, required: true },
   label: { type: String, required: true },
-  visibility: {
-    enum: ["public", "private", "custom"],
-  },
+  visibility: { type: String, enum: ["public", "private", "custom"], required: true },
   actor: {
     username: { type: String, required: true },
   },
   description: { type: String },
+  sharedAccess: { type: Array, default: [] },  // Define the sharedAccess array
 };
 
 class Prompts {
@@ -17,54 +17,60 @@ class Prompts {
     this.schema = promptSchema;
     this.prompts = prompts;
     this.users = users;
-    this.data = [];
   }
+
   create(newPrompt) {
-    let user = this.users.find(
+    const user = this.users.find(
       (user) => user.username === newPrompt.actor.username
     );
     if (user) {
       this.prompts.push(newPrompt);
+      return "Prompt added";
     }
-    return "prompt added";
+    return "User not found";
   }
+
   get(username) {
-    //here we will retrieve prompts made by a particular user.
-    let userExists = this.prompts.find(
+    const userPrompts = this.prompts.filter(
       (prompt) => prompt.actor.username === username
     );
-    if (userExists) {
-      return this.prompts.filter(
-        (prompt) => prompt.actor.username === username
-      );
-    } else {
-      let user = this.prompts.find((prompt) =>
-        prompt.sharedAccess.find((sharedUsers) => sharedUsers === username)
-      );
-      if (user) {
-        return this.prompts.filter((prompt) =>
-          prompt.sharedAccess.find((sharedUsers) => sharedUsers === username)
-        );
-      }
+    if (userPrompts.length > 0) {
+      return userPrompts;
     }
-    return "user not found";
+
+    const sharedPrompts = this.prompts.filter((prompt) =>
+      prompt.sharedAccess.includes(username)
+    );
+    if (sharedPrompts.length > 0) {
+      return sharedPrompts;
+    }
+
+    return "User not found";
   }
+
   getAll() {
-    this.data = [...this.prompts];
-    return this.data;
+    return this.prompts.filter((prompt) => prompt.visibility !== "private");
   }
+
   share(id, username) {
-    let user = this.users.find((user_name) => user_name.username === username);
-    if (user) {
-      return "user already has access to prompts";
+    const user = this.users.find((user) => user.username === username);
+    if (!user) {
+      return "User not found";
     }
-    let prompt = this.prompts.find((prompt) => prompt._id.$oid === id);
-    if (prompt) {
-      prompt.sharedAccess.push(username);
-      this.prompts.push(prompt);
-      return "prompt shared", prompt;
+
+    const prompt = this.prompts.find((prompt) => prompt._id.$oid === id);
+    if (!prompt) {
+      return "Prompt not found";
     }
+
+    if (prompt.sharedAccess.includes(username)) {
+      return "User already has access to the prompt";
+    }
+
+    prompt.sharedAccess.push(username);
+    return { message: "Prompt shared", prompt };
   }
+
   deleteAll() {
     this.prompts = [];
     return "All prompts deleted";
@@ -72,8 +78,9 @@ class Prompts {
 }
 
 let prompt = new Prompts();
-let result = prompt.share("668623883ac9b77c7c6fc98b", "stephen hawkins");
+let result = prompt.share("johndoe", "stephen hawkins");
 console.log(result);
+
 
 // print prompts
 
