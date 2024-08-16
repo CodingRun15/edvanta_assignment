@@ -1,0 +1,72 @@
+[
+  {
+    "firstName": "John",
+    "lastName": "Doe",
+    "username": "johndoe",
+    "email": "johndoe@example.com",
+    "password": "password123"
+  },
+  {
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "username": "janesmith",
+    "email": "janesmith@example.com",
+    "password": "password123"
+  },
+  {
+    "firstName": "Robert",
+    "lastName": "Johnson",
+    "username": "robertjohnson",
+    "email": "robertjohnson@example.com",
+    "password": "password123"
+  },
+  {
+    "firstName": "Emily",
+    "lastName": "Davis",
+    "username": "emilydavis",
+    "email": "emilydavis@example.com",
+    "password": "password123"
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Brown",
+    "username": "michaelbrown",
+    "email": "michaelbrown@example.com",
+    "password": "password123"
+  },
+  {
+    "firstName": "Sarah",
+    "lastName": "Wilson",
+    "username": "sarahwilson",
+    "email": "sarahwilson@example.com",
+    "password": "password123"
+  },
+  {
+    "firstName": "David",
+    "lastName": "Lee",
+    "username": "davidlee",
+    "email": "davidlee@example.com",
+    "password": "password123"
+  },
+  {
+    "firstName": "Laura",
+    "lastName": "Martin",
+    "username": "lauramartin",
+    "email": "lauramartin@example.com",
+    "password": "password123"
+  },
+  {
+    "firstName": "James",
+    "lastName": "Garcia",
+    "username": "jamesgarcia",
+    "email": "jamesgarcia@example.com",
+    "password": "password123"
+  },
+  {
+    "firstName": "Anna",
+    "lastName": "Martinez",
+    "username": "annamartinez",
+    "email": "annamartinez@example.com",
+    "password": "password123"
+  }
+]

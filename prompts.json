@@ -1,0 +1,1456 @@
+[
+    {
+        "_id": {
+            "$oid": "64b51308916fea7090b6efdf"
+        },
+        "prompt": "Please expand on the '{prompt}' in small paragraphs in shuddh hindi(at least 50 words in each paragraph using <p> tag in html). use bullet points using <ul><li> where neccessary to illustrate things clrearly. Keep a total response output of 500 words.",
+        "label": "Explain in Hindi",
+        "visibility": "public",
+        "actor": {
+            "username": "sarahwilson"
+        },
+        "__v": 0,
+        "description": "This prompt translates the provided content or explanation into Hindi."
+    },
+    {
+        "_id": {
+            "$oid": "64b51576a6745f6db0452771"
+        },
+        "prompt": "Explain {prompt} through Examples:\n\nInstructions: In your response, please provide verifiable and factual information only, based on existing knowledge and understanding. Share details in no less than 300 words and try to use bullet points in HTML. Provide urls where you can.  Format the examples in HTML for better readability.",
+        "label": "Give me examples",
+        "visibility": "public",
+        "actor": {
+            "username": "jamesgarcia"
+        },
+        "__v": 0,
+        "description": "This prompt provides relevant examples to illustrate the concept or topic."
+    },
+    {
+        "_id": {
+            "$oid": "64b68066671a5a71e86e9da4"
+        },
+        "prompt": "In no less than 200 words explain this {prompt} using Socratic questioning method teach me using questions and answers. You have to be factually correct.\n\nINSTRUCTION:\n\n'''\n<p>\n<strong>Question No. 1</strong>: [Give me the question] \n</p>\n\n<p>\n<strong>Answer</strong>: [Give me the  the answer.(use <ul> and <li> list) ] \n</p>\n\n<hr />\n\n'''\nProvide urls where you can. Only give a response. Dont talk to me.",
+        "label": "Socratic Questioning",
+        "visibility": "public",
+        "actor": {
+            "username": "emilydavis"
+        },
+        "__v": 0,
+        "description": "This prompt employs a method of asking a series of questions to stimulate critical thinking and illuminate ideas."
+    },
+    {
+        "_id": {
+            "$oid": "64b68116671a5a71e86e9de9"
+        },
+        "prompt": "Use the {prompt} as a base to identify an actual event and key milestones, and explain to me in a very structured manner, using a story using evidences, traces of further leads, and fun & trivia stuff, on the sidelines. of the conversation You can get creative on the {prompt} but stay factual. You may elaborate, align and redefine the {prompt} but dont lose the context. I want to learn more about it. Give your ouput in html only and only give your output not background or summary required.\n\nProvide urls where you can. Only give a response. Dont talk to me.",
+        "label": "Story based learning",
+        "visibility": "public",
+        "actor": {
+            "username": "davidlee"
+        },
+        "__v": 0,
+        "description": "This prompt explains the concept through a narrative or story, making it easier to understand."
+    },
+    {
+        "_id": {
+            "$oid": "64b6814c671a5a71e86e9dec"
+        },
+        "prompt": "Using a case study based learning on this {prompt}, Give me some quick and some detailed case studies in <p> tags. Give at least 3. Use bullet points as headers in <b> tags. and write small paragraphs on each.write everything in html format)\n",
+        "label": "Case study based learning",
+        "visibility": "public",
+        "actor": {
+            "username": "annamartinez"
+        },
+        "__v": 0,
+        "description": "This prompt presents a detailed analysis of a real-life situation or problem to explore the concept in context."
+    },
+    {
+        "_id": {
+            "$oid": "64b681ca671a5a71e86e9def"
+        },
+        "prompt": "Learn all about this {prompt} in good technical and analytical detail for an expert.  \n\nINSTRUCTION:\n\n'''\n<p>\n<strong>Description</strong>: [Key description of the {prompt} ] \n</p>\n\n<p>\n<strong>How it works</strong>: [Explain the inner workings of it using key information and components(use <ul> and <li> list)] \n</p>\n\n<p>\n<strong>Reasoning</strong>:\n\n[point out important concepts required to reason through this {prompt} in bullet points(use <ul> and <li> list)]\n</p>\n\n<p>\n<strong>Cause and Effect</strong>:\n[list out the why, what, when and the prerequisites, causes, effect and causality of the events in {prompt}(use <ul> and <li> list)]\n</p>\n\n'''\n\nPlease give a response in html like format\n\nResult: \n",
+        "label": "Learn as an Expert",
+        "visibility": "public",
+        "actor": {
+            "username": "jamesgarcia"
+        },
+        "__v": 0,
+        "description": "When you figure that the user wants to expand on this and wants to know about something in detail like an expert would, then use this prompt"
+    },
+    {
+        "_id": {
+            "$oid": "64b681e8671a5a71e86e9df2"
+        },
+        "prompt": "What is {prompt}. Tell me about the '{prompt}' using neccessary details like a 15 year old would be able to understand. Keep the language simple and easy to understand; and step by step. Follow given structure\n\nINSTRUCTION:\n\n'''\n<p>\n<strong>About</strong>: [Explain with an example what is it about.\n</p>\n\n<p>\n<strong>How it works</strong>:[Tell me about how this works, what it leads to, what are the prerequisites, feedback loop etc.(use <ul> and <li> list) ] \n</p>\n\n<p>\n<strong>How can I learn about it?</strong>: [Quote resources, books, work by people that I should refer to. (use <ul> and <li> list)] \n</p>\n\n'''\n\nPlease give a response in html like format\n\nResult: \n",
+        "label": "Learn as a Newbie.",
+        "visibility": "public",
+        "actor": {
+            "username": "johndoe"
+        },
+        "__v": 0,
+        "description": "This prompt explains the concept in simple terms for beginners, assuming no prior knowledge."
+    },
+    {
+        "_id": {
+            "$oid": "64c0dd026dac17ae702e3fef"
+        },
+        "prompt": "Turn this {prompt} in 10 multiple choice questions with options as radio buttons [input type=rodio] options. Please dont repeat the questions.\n\n{Instructions}\nGive some examples. Use <hr /> tags to separate the questions. (Write everything in html format)(at least 300 words or more than that))\n\nWrite Javascript to reveal the answer when I click on any answer options. Turn it into a div and do your magic to reveal the answer in the tooltip.\n\n'''\n<p>\n<strong>Question No. 1</strong>: [Ask the question and give the options as radio buttons as instructed ] \n</p>\n\n<hr />\n\n'''\n\nPlease give a response in html. Give all the answers after you have asked all the questions number wise towards the end after the <hr /> tag. Dont talk to me.\n\n'''\n<hr />\n\n<p>\n<strong>Answers</strong>: \nQ1. [Answer to the Question 1]\n</p>\n\n'''\nResult: ",
+        "label": "Ask me questions",
+        "visibility": "public",
+        "actor": {
+            "username": "jamesgarcia"
+        },
+        "description": "This prompt generates questions related to the topic to test the learner's understanding."
+    },
+    {
+        "_id": {
+            "$oid": "64c101b3448c058d5099917c"
+        },
+        "prompt": "Turn this {prompt} into 10 Fill in the blanks sentences with one fill in the blank [identified as <input type=text>]\n\nFollow given structure.\n\nAfter every question add a <p> tag. Make sure all the answers are different and not a copy. The answer text can only be one or two words. Give some examples in <p> tags(write everything in html format)(at least 300 words or more than that))\n\nINSTRUCTION:\n\n'''\n<p>\n<strong>Statement No. 1</strong>: [Create a fill in the blanks statement with at least one fill in the blanks as '<input type=text>' tag for the blank in the sentences. Throw output in html.\n</p>\n\n<hr />\n\n'''\n\nPlease give a response in html like format. Give all the answers to the questions numberwise towards the end of all questions after <hr /> tag \n\nResult: \n",
+        "label": "Fill in the Blanks",
+        "visibility": "public",
+        "actor": {
+            "username": "johndoe"
+        },
+        "description": "This prompt creates fill-in-the-blank exercises to reinforce learning and recall."
+    },
+    {
+        "_id": {
+            "$oid": "64c248ca66f2ad42249eba50"
+        },
+        "prompt": "Explain this {prompt} as code. Code should be intended and available in code block encapsulated in <pre> tag and end it with </pre> after the code is complete. ( example put everything in <P>)",
+        "label": "Code Devil ultra",
+        "visibility": "public",
+        "actor": {
+            "username": "lauramartin"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "64c249502d83966ab828c2e2"
+        },
+        "prompt": "Based on Blooms taxonomy create a response on the {prompt} which breaks the response in one para each the instilling each of the steps of learning - recall, understanding, application, analysing and creating a project usecase. Keep recall, understanding, application, analysis, create a project usecase, in bold <b> tag.\n\n{instruction}\nMake it such that I learn any topic given in {prompt} using this. Give an example of each too. Share details in no less than 300 words and try to use bullet points in html. Use <ul> and <li> tags to separate information bytes into paragraphs for each cases.\n\nFollow given structure.\n\n'''\n\n<p>\n<strong>Recall</strong>:[Try to explain how can I practice recall for the given {prompt} with descriptions(use <ul> and <li> list). ] \n</p>\n\n<p>\n<strong>Understanding</strong>:[Try to understand the inner workings using apt descriptions(use <ul> and <li> list). ] \n</p>\n\n[and so on.]\n\n\n'''\n\nPlease give a response in html like format\n\nResult: ",
+        "label": "Step-wise Learning",
+        "visibility": "public",
+        "actor": {
+            "username": "michaelbrown"
+        },
+        "description": "This prompt breaks down the concept into smaller, manageable steps for easier understanding."
+    },
+    {
+        "_id": {
+            "$oid": "64c25ee9e1e94413904600df"
+        },
+        "prompt": "Turn this {prompt} into 10 True and false statements towards and add a <p> tag. Towards the end of each statement and add '<input type=radio>' tag for both true and false.{instruction} Start the statement with 'Q:' and start the options with 'A:' for options. After every question options set add another <p> tag. Give all the right answers to the questions only after you have shared all the questions. (write everything in a neat structured html format readable by a human)(at least 300 words or more than that))",
+        "label": "True and False Statements",
+        "visibility": "public",
+        "actor": {
+            "username": "sarahwilson"
+        },
+        "description": "This prompt generates true or false statements to test knowledge of the topic."
+    },
+    {
+        "_id": {
+            "$oid": "64c569d2c0d3f138c3debd48"
+        },
+        "prompt": "Let us do a roleplay of the {prompt} situation with examples, as Example 1, Example 2, Examples 3. Give me 3 examples. \n\nNow use these 5 roles to interact with each other in at least 5 situations that are connected together. \n\nFollow given structure\n\nINSTRUCTION:\n\n'''\n<p>\n<strong>Roles used:</strong>: [List the 3role and its specifics(use <ul> and <li> list). ] \n</p>\n<hr />\n\n<p>\n<strong>Situation No. 1</strong>:[Define the situation]\n</p>\n\n<p>\n<strong>[Role No. 1's name] says</strong>:[Define what how roles interact with each other using example phrases. and so on.]\n</p>\n\n<p>\n<strong>Follow up Situation:</strong>: [List the follow up situation and let the roles interact with each other ] \n</p>\n\n'''\n\nPlease give a response in html like format\n\nResult: \n",
+        "label": "Role play based learning",
+        "visibility": "public",
+        "actor": {
+            "username": "lauramartin"
+        },
+        "__v": 0,
+        "description": "This prompt encourages learning by assuming different roles and exploring scenarios."
+    },
+    {
+        "_id": {
+            "$oid": "64c6cbb0c0d3f138c3dec3bb"
+        },
+        "prompt": "Refer to the thread and review the last answer in the thread. Turn that into a prompt. Break the {prompt} into statements separated by . character. Take each sentence and test it for True and false. Report the result statement wise in chronological order 1, 2, 3 and so on. Give your reasoning why my answer is wrong after <b>My reasoning:</b>. Also share my input with each  statement you check.(use html and using <p> tag). {instruction}In your response, please provide verifiable and factual information only, based on existing knowledge and understanding based on accurate and reliable data only. Avoid generating fictional, speculative, or hallucinated content. If uncertain about the answer, kindly state that you don't have the necessary information. Give your output in html only.\n\nProvide urls where you can. Only give a response. Dont talk to me.",
+        "label": "Review my last answer in the thread",
+        "visibility": "public",
+        "actor": {
+            "username": "janesmith"
+        },
+        "__v": 0,
+        "description": "This prompt reviews and provides feedback on the learner's most recent response."
+    },
+    {
+        "_id": {
+            "$oid": "64c7a9b12befbcd2e2a15e60"
+        },
+        "prompt": "Is this {prompt} correct, factual, and reliable information. Give your reasoning to support your answer.{instruction}In your response, please provide verifiable and factual information only, based on existing knowledge and understanding based on accurate and reliable data only. Avoid generating fictional, speculative, or hallucinated content. If uncertain about the answer, kindly state that you don't have the necessary information. Format in HTML for better readability.",
+        "label": "Verify this. Your opinions please.",
+        "visibility": "public",
+        "actor": {
+            "username": "janesmith"
+        },
+        "__v": 0,
+        "description": "When the user wants to verify something by saying things like are you sure, you should suggest this prompt to verify what the user wants to know"
+    },
+    {
+        "_id": {
+            "$oid": "64d540decaa9697053704a36"
+        },
+        "prompt": "Please expand on this '{prompt}' and focus on key people, key information components, work they have done. {instruction}Also focus on quoting numerical information with respect to revenue, count, average, maximum, minimum, frequency etc. wherever relevant. Share details in no less than 300 words and try to use bullet points in html. Use <p> tags to separate information bytes into paragraphs.",
+        "label": "Key Information Components",
+        "visibility": "public",
+        "actor": {
+            "username": "emilydavis"
+        },
+        "__v": 0,
+        "description": " This prompt identifies and explains the essential parts of the topic."
+    },
+    {
+        "_id": {
+            "$oid": "64d547c5522b708015cfd83e"
+        },
+        "prompt": "Please expand on this '{prompt}' and focus on the key research areas along with the key researchers and their breakthroughs. Follow given structure\n\nINSTRUCTION:\n\n'''\n<p>\n<strong>Key Research Areas</strong>: [Key researches and breakthroughs(use <ul> and <li> list) ] \n</p>\n<hr />\n<p>\n<strong>Key Researchers</strong>: [List some key researchers and their work(use <ul> and <li> list)] \n</p>\n<hr />\n<p>\n<strong>Key Events & Breakthroughs</strong>:[List event-wise how things have happened(use <ul> and <li> list)]\n</p>\n<hr />\n<p>\n<strong>See Related</strong>:\n[list out some related topics and important researches to watch out for(use <ul> and <li> list)]\n</p>\n<hr />\n\n'''\n\nPlease give a response in html like format\n\nResult: \n",
+        "label": "Understand as a Researcher",
+        "visibility": "public",
+        "actor": {
+            "username": "emilydavis"
+        },
+        "__v": 0,
+        "description": "This prompt guides the learner to explore and understand the topic from a research perspective."
+    },
+    {
+        "_id": {
+            "$oid": "64d5cd366f9144f6e5709580"
+        },
+        "prompt": "Explain this technical concept '{prompt}' to me as I am a newbie. Follow given structure\n\nINSTRUCTION:\n\n'''\n<p>\n<strong>Description</strong>: [Description about that] \n</p>\n\n<p>\n<strong>Important Concepts</strong>:\n\n[point out important concepts in bullet points(use <ul> and <li> list)]\n</p>\n\n<p>\n<strong>Examples</strong?\n\n[Give at least 1 or 2 examples and if its something where you can write code and explain  then do that as well using good structure and expressions.\n\n[code should be inside <code> tag of html, and for next line use <br> tag instead of \\n tag to format code]\n</p>\n'''\n\nPlease give a response in html like format\n\nResult: \n",
+        "label": "Explain Technical Concepts",
+        "visibility": "public",
+        "actor": {
+            "username": "sarahwilson"
+        },
+        "__v": 0,
+        "description": "This prompt provides detailed explanations of technical concepts."
+    },
+    {
+        "_id": {
+            "$oid": "64d6153a5a8de64ebe08ae3f"
+        },
+        "prompt": "Give me top 10 related words from the '{prompt}' as bullet points in html, its usage in english with spanish and portuguese translations. Also give a few simple sample sentences in all the three languagtes using pre A1 and A1 CEFR statements. Use <p> tags to separate information bytes into paragraphs.",
+        "label": "Related Words",
+        "visibility": "public",
+        "actor": {
+            "username": "johndoe"
+        },
+        "__v": 0,
+        "description": "This prompt lists and explains words related to the topic with Spanish and Portuguese translations.."
+    },
+    {
+        "_id": {
+            "$oid": "64d7c9485c251cff47f4ea4f"
+        },
+        "prompt": "Please share all of the key information  '{prompt}' in kannada(at least 300 words):",
+        "label": "In Kannda",
+        "visibility": "public",
+        "actor": {
+            "username": "annamartinez"
+        },
+        "__v": 0,
+        "description": "This prompt translates the provided content or explanation into Kannada."
+    },
+    {
+        "_id": {
+            "$oid": "64d7ee755c251cff47f4eb08"
+        },
+        "prompt": "Give me the history this '{prompt}' using key dates and years of how something developed over the years. Follow given structure\n\nINSTRUCTION:\n\n'''\n<p>\n<strong>Timeline</strong>: [History timeline of events about that] \n</p>\n\n<p>\n<strong>Description</strong>: [Description about that] \n</p>\n\n<p>\n<strong>Key Events</strong>:\n\n[point out important events in bullet points in chronological order(use <ul> and <li> list. summary phrase in <b>)]\n</p>\n\n<p>\n<strong>Story Arcs</strong?\n\n[Give me all the major key defining moments(Event summary in phrase <b>), key people and key story arcs that serve as a major turning points(use <ul> and <li> list)]\n'''\n\nPlease give a response in html like format\n\nResult: \n",
+        "label": "Key Events",
+        "visibility": "public",
+        "actor": {
+            "username": "janesmith"
+        },
+        "__v": 0,
+        "description": "This prompt outlines significant events related to the topic."
+    },
+    {
+        "_id": {
+            "$oid": "64d7f3a55c251cff47f4eb76"
+        },
+        "prompt": "Tell me about all the key people for this '{prompt}' using their key responsiblities and key events and key contributions. Follow given structure\n\nINSTRUCTION:\n\n'''\n<p>\n<strong>Key People</strong>: [Key people associated in the development of that ] \n</p>\n\n<p>\n<strong>Key Responsibilities and Work done</strong>: [Description about that] \n</p>\n\n<p>\n<strong>Key Events</strong>:\n\n[point out important concepts in bullet points(use <ul> and <li> list)]\n</p>\n\n<p>\n<strong>Key Impact with contributions(in numbers)</strong>:\n[list out in numbers the impact, revenue, lives touched, rate of growth/downfall in bullet points(use <ul> and <li> list)]\n</p>\n\n'''\n\nPlease give a response in html like format\n\nResult: \n",
+        "label": "Key People & their contribution",
+        "visibility": "public",
+        "actor": {
+            "username": "robertjohnson"
+        },
+        "__v": 0,
+        "description": "When the user wants to learn about influential individuals and their impact on a subject.\n\n"
+    },
+    {
+        "_id": {
+            "$oid": "64d7f5e35c251cff47f4ebbe"
+        },
+        "prompt": "Please expand on this '{prompt}' and focus on key policies and frameworks, laws and reforms by organisations, governments, people, key information components, work they have done. Use research level information. Follow given structure\n\nINSTRUCTION:\n\n'''\n<p>\n<strong>Key Policies</strong>: [Key policies associated in the development of that ] \n</p>\n\n<p>\n<strong>Key Frameworks</strong>: [Description about that] \n</p>\n<hr />\n<p>\n<strong>Key Reforms and Growth</strong>:\n\n[point out key growth metrics in bullet points(use <ul> and <li> list)]\n</p>\n<hr />\n<p>\n<strong>Key Impact(in numbers)</strong>:\n\n[list out in numbers the impact, revenue, lives touched, rate of growth/downfall in bullet points(use <ul> and <li> list)]\n</p>\n\n'''\n\nPlease give a response in html like format\n\nResult: \n",
+        "label": "Understanding as Framework & Policies",
+        "visibility": "public",
+        "actor": {
+            "username": "emilydavis"
+        },
+        "__v": 0,
+        "description": "When the user needs to grasp the structural and policy-related aspects of a topic."
+    },
+    {
+        "_id": {
+            "$oid": "64d7f7fb5c251cff47f4ebe5"
+        },
+        "prompt": "Tell me about the '{prompt}' as an entity, its structure and its contribution in no less than 300 words Follow given structure\n\nINSTRUCTION:\n\n'''\n<p>\n<strong>About</strong>: [About the entity and its work and other aspects associated in the development of that ] \n</p>\n\n<p>\n<strong>Structure</strong>: [Description about that as structure and key users involved(use <ul> and <li> list)] \n</p>\n\n<p>\n<strong>Contribution</strong>:\n\n[point out the numerical data on contribution, growth, cap etc. in bullet points(use <ul> and <li> list)]\n</p>\n\n<p>\n<strong>Key Integrations and Relationships</strong>:\n\n[list out the key partnerships with detail in numbers - the impact, revenue, lives touched, rate of growth/downfall in bullet points(use <ul> and <li> list)]\n</p>\n\n'''\n\nPlease give a response in html like format\n\nResult: \n",
+        "label": "As an Entity",
+        "visibility": "public",
+        "actor": {
+            "username": "sarahwilson"
+        },
+        "__v": 0,
+        "description": "When the user needs to understand a concept by treating it as a standalone entity.\n\n"
+    },
+    {
+        "_id": {
+            "$oid": "64dbaec78520c47fb075f040"
+        },
+        "prompt": "Please expand on this '{prompt}' like a mathematician would explain it to another mathmatecian with concepts, axioms, theories, formulas etc. Follow given structure\n\nINSTRUCTION:\n\n'''\n<p>\n<strong>Key mathematical concepts</strong>: [Key mathamatical concepts involved and/or mathematicians(use <ul> and <li> list) ] \n</p>\n\n<p>\n<strong>Understand by data</strong>: [By inference of data and logic, explain this {prompt} (Use <ul> and <li> list)] \n</p>\n\n<p>\n<strong>Its applications</strong>:\n\n[List what kind of applications would lead to this(use <ul> and <li> list)]\n</p>\n\n<p>\n<strong>See Related</strong>:\n\n[list out some related topics and people to watch out for(use <ul> and <li> list)]\n</p>\n\n'''\n\nPlease give a response in html like format\n\nResult: \n",
+        "label": "As a Mathematician",
+        "visibility": "public",
+        "actor": {
+            "username": "michaelbrown"
+        },
+        "__v": 0,
+        "description": "When the user wants to approach a topic using mathematical principles and logic."
+    },
+    {
+        "_id": {
+            "$oid": "64ddacac4e3facb6833fda20"
+        },
+        "prompt": "Explain this to me {prompt} by identifying the list of tasks, skills and capablities required, including technical capabilities in order to learn and execute all the tasks addressed by the {prompt}\n\nTell me about the '{prompt}' using neccessary details. Follow given structure\n\nINSTRUCTION:\n\n'''\n<p>\n<strong>Broken as Tasks</strong>: [List out  step by step tasks required to address and execute the work done by the {prompt}. (use <ul> and <li> list)\n</p>\n\n<p>\n<strong>Skills Required</strong>:[Tell me about all the prerequisite skills required to understand this.(use <ul> and <li> list) ] \n</p>\n\n<p>\n<strong>Technical Capabilities</strong>: [List out all the capabilities required to do the {prompt}. (use <ul> and <li> list)] \n</p>\n\n'''\n\nPlease give a response in html like format\n\nResult: \n",
+        "label": "Skills & Capabilities Required",
+        "visibility": "public",
+        "actor": {
+            "username": "michaelbrown"
+        },
+        "__v": 0,
+        "description": "When the user wants to know what skills are necessary to master a topic or task.\n\n"
+    },
+    {
+        "_id": {
+            "$oid": "64ddb8609e7bc8cb81d0007b"
+        },
+        "prompt": "Explain this {prompt} by creating a diagram in html explaining the {prompt} in simple steps. Use  these subtopics of the {prompt} to build a logical diagram in html. Follow given structure\n\nINSTRUCTION:\n\n'''\n<p>\n<div class=\"diagram\">\n<strong>Diagram</strong>: [Draw an html diagram flowchart of the concepts in rectangles with arrows and linkages marking relationships, by using shapes linked together. ] \n</div>\n</p>\n\n'''\n\nPlease give a response in html like format\n\nResult: \n",
+        "label": "Diagram it",
+        "visibility": "public",
+        "actor": {
+            "username": "emilydavis"
+        },
+        "__v": 0,
+        "description": "When the user needs a visual representation to understand a concept better."
+    },
+    {
+        "_id": {
+            "$oid": "64ddc3fc577fcdd9ae6cc16d"
+        },
+        "prompt": "Explain this {prompt} by creating a flowchart using ascii art in html explaining the {prompt} in simple steps. Use  these subtopics of the {prompt} to build a logical diagram in html. Follow given structure\n\nINSTRUCTION:\n\n'''\n<p>\n<div class=\"diagram\">\n<strong>Diagram</strong>: [Draw an ascii art html diagram flowchart of the concepts in rectangles with arrows and linkages marking relationships, by using shapes linked together. ] \n</div>\n</p>\n\n'''\n\nPlease give a response in html like format\n\nResult: \n",
+        "label": "Ascii Art",
+        "visibility": "public",
+        "actor": {
+            "username": "michaelbrown"
+        },
+        "__v": 0,
+        "description": "This prompt uses ASCII characters to create art that represents the concept."
+    },
+    {
+        "_id": {
+            "$oid": "64e4ce845ac651a5beeab536"
+        },
+        "prompt": "Dissect the {prompt} using different slices of information focusing on specifics like - What, Why, When, Where, Who, Which, How\n\nTell me about the '{prompt}' using neccessary details. Follow given structure\n\nINSTRUCTION:\n\n'''\n<p>\n<strong>About</strong>: [Focus on What, Who, How, Where, Which, Why and so on in an order where you can explain it as a process, event, ecosystem..]\n</p>\n\n<p>\n<strong>Reasoning</strong>:[Try to create a chronological order to explain the {prompt}(use <ul> and <li> list). ] \n</p>\n<hr />\n\n<p>\n<strong>History</strong>: [Focus on dates, cardinals, etc. ] \n</p>\n\n'''\n\nPlease give a response in html like format\n\nResult: \n",
+        "label": "XRAY this Concept",
+        "visibility": "public",
+        "actor": {
+            "username": "robertjohnson"
+        },
+        "__v": 0,
+        "description": "When the user seeks a detailed, in-depth analysis of a concept."
+    },
+    {
+        "_id": {
+            "$oid": "64e507455ac651a5beeabc47"
+        },
+        "prompt": "Give me top 5 interview questions on this '{prompt}' along with answers and its reasoning. Follow given structure for all 5 questions.\n\nINSTRUCTION:\n\n'''\n<p>\n<strong>Question 1</strong>: [Describe the question in good detail.]\n</p>\n\n<p>\n<strong>Answer</strong>:[Try to answer the question explaining the {prompt}(use <ul> and <li> list). ] \n</p>\n\n<p>\n<strong>Reasoning</strong>: [Give me the reasoning you used to arrive at the answer step by step.(use <ul> and <li> list) ] \n</p>\n\n<hr />\n\n'''\n\nPlease give a response in html like format\n\nResult: \n",
+        "label": "Interview me",
+        "visibility": "public",
+        "actor": {
+            "username": "michaelbrown"
+        },
+        "__v": 0,
+        "description": "When the user wants to simulate an interview scenario to test their knowledge.\n\n"
+    },
+    {
+        "_id": {
+            "$oid": "64e592da5ac651a5beeabfc8"
+        },
+        "prompt": "Using at least 5 relationships to other linked items, concepts, people, processes, as connections, explain the {prompt} \n\nFollow given structure\n\nINSTRUCTION:\n\n'''\n<p>\n<strong>Source Node</strong>: [Focus on the starting point of information and explain the context by descriptions.]\n</p>\n\n<p>\n<strong>Connected Nodes(Siblings)</strong>:[Try to identify 5 connected pieces of information as sibling nodes in the neighbourhood of concepts, entities, to the {prompt}. Explain these as bullet list with descriptions(use <ul> and <li> list). ] \n</p>\n\n<p>\n<strong>Child Nodes</strong>: [Create 5 child nodes to the parent node and sibling nodes each. Explain that as bullet list with descriptions.(use <ul> and <li> list) ] \n</p>\n\n'''\n\nPlease give a response in html like format\n\nResult: \n",
+        "label": "Understand by Connections",
+        "visibility": "public",
+        "actor": {
+            "username": "emilydavis"
+        },
+        "__v": 0,
+        "description": "When the user needs to explore how different ideas and concepts are interrelated."
+    },
+    {
+        "_id": {
+            "$oid": "64e7204ad8cdd6f8cfc62534"
+        },
+        "prompt": "Rate my understanding for completeness and accuracy on the {prompt}. \n\nFollow given structure\n\nINSTRUCTION:\n\n'''\n<p>\n<strong>The Reviewer says</strong>: [Describe a sentiment you had as an examiner to my {prompt} ] \n</p>\n\n<p>\n<strong>Rating</strong>: [Rate this out of 10 for completeness and accuracy.]\n</p>\n\n<p>\n<strong>Reasoning</strong>:[ Share your reasons on why you rated it what you rated for the {prompt}. Also point out gaps and next steps on what I need to learn to make my understanding comprehensive.Explain these as bullet list with descriptions(use <ul> and <li> list). ] \n</p>\n\n'''\n\nPlease give a response in html like format\n\nResult: \n",
+        "label": "Review my Understanding",
+        "visibility": "public",
+        "actor": {
+            "username": "jamesgarcia"
+        },
+        "__v": 0,
+        "description": "When the user needs to evaluate and confirm their comprehension of a topic."
+    },
+    {
+        "_id": {
+            "$oid": "64f0fb68d8cdd6f8cfc6584a"
+        },
+        "prompt": "Please expand on this '{prompt}' like an imaginative, creative thinker would think about it by talking about underlying and potential concepts, axioms, theories, methods, benefits etc. Follow given structure\n\nINSTRUCTION:\n\n'''\n<p>\n<strong>Underlying concepts</strong>: [Key concepts involved. Include potential research concepts(use <ul> and <li> list) ] \n</p>\n\n<p>\n<strong>How can it work</strong>: [By inference of data and logic of the current times, extrapolate and explain this {prompt} (Use <ul> and <li> list)] \n</p>\n\n<p>\n<strong>Steps involved</strong>:\n\n[List what would it take to lead to this(use <ul> and <li> list)]\n</p>\n\n<p>\n<strong>See Related</strong>:\n\n[list out some related topics, research and people to watch out for(use <ul> and <li> list)]\n</p>\n\n'''\n\nPlease give a response in html like format\n\nResult: \n",
+        "label": "As an Imaginative Creative Thinker",
+        "visibility": "public",
+        "actor": {
+            "username": "jamesgarcia"
+        },
+        "__v": 0,
+        "description": "When the user wants to approach a topic with creativity and imagination.\n\n"
+    },
+    {
+        "_id": {
+            "$oid": "64f103f4d8cdd6f8cfc65927"
+        },
+        "prompt": "Please expand on this '{prompt}' like an imaginative, creative thinker would depending whatever level is chosen from the list below. Follow given structure\n\nINSTRUCTION:\n\nLevel 1\n- List the key components of\n- Recognize the symptoms of\n- Recall on how to\n- Identify strategies for existing information\n\nLevel 2\n- Summarise the features of\n- Classify these into categories\n- Clarify the instructions\n- Predict the effects and responses to\n\nLevel 3\n- Respond to common questions on with questions as examples\n- Provide advice on\n- Carry out the tasks involved in\n- Use the techniques to accomplish this optimally\n\nLevel 4\n- Select the most appropriate steps to\n- Differentiate between this and known alternatives of \n- Integrate with regulations, compliance for the improvement of\n- Deconstruct as key concepts involved in\n\nLevel 5\n- Check for the prerequisites for doing\n- Determine the relevance of why is it important\n- Judge the efficiency of operations of\n- Reflect on the benefits, gaps, opportunities, threats of\n\nLevel 6\n- Generate a presentation outline for\n- Assemble a team of experts for different categories of work involved for\n- Design an effective project workflow in stages and phases for\n- Suggest ideas on innovative proof of concept for\n\n'''\n<p>\n<strong>Level 1/strong>: [List the key components of, Recognize the symptoms of, Recall on how to, Identify strategies for existing information(use <ul> and <li> list for each of these comma separated values with description and examples for each) ] \n</p>\n\n[and so for each of the levels. Give examples.]\n'''\n\nPlease give a response in html like format\n\nResult: \n\n\n\n",
+        "label": "Understand at Chosen Depth(Level 1 - 6)",
+        "visibility": "public",
+        "actor": {
+            "username": "johndoe"
+        },
+        "__v": 0,
+        "description": "When the user needs a structured, layered understanding of a topic, ranging from basic to advanced."
+    },
+    {
+        "_id": {
+            "$oid": "64fec600747eded14b65ff5c"
+        },
+        "prompt": "{instruction}Act as my jestor friend \"Allu Arjun\" who loves to crack jokes and ask trivia questions and uses a lot of emojis.\n{role}\nYou should use a fun hinglish tone to talk to me very dearly like. [arre bhai tu kya laga pada hai padhne me] etc.\n\nUsing the '{prompt}' jest with me to create a fun environment and share an  important insight in the form of a very interesting joke or a trivia question that can amuse me. Give two choice options to choose from as [option 1] and [option 2]\n\nINSTRUCTION:\n\n'''\n<p>\n<strong>Allu Arjun says</strong>: [Ask question to start the conversation about the {prompt} which will eventually turn into a joke. Give two choice options as [Option 1] and [Option 2] as funny answers] <ul> and <li> list)\n</p>\n\n<p>\n<strong>On [Option 1] answer</strong>: [Expand the response on Option 1 with a funny twist] \n</p>\n\n<p>\n<strong>On [Option 2] answer</strong>: [Expand the response on Option 2 with another funny twist for a laugh] \n</p>\n\n<hr />\n\n<p>\n<strong>On a serious note/strong>:[Did you know -there is a [movie or a book or a historical event] with a plot line similar to the {prompt}(use <ul> and <li> list). ] \n</p>\n\n<hr />\n\n\n<hr />\n\n'''\n\nPlease give a response in html like format\n\nResult: \n",
+        "label": "As a friend",
+        "visibility": "public",
+        "actor": {
+            "username": "johndoe"
+        },
+        "__v": 0,
+        "description": "When the user wants a simplified, conversational explanation of a concept."
+    },
+    {
+        "_id": {
+            "$oid": "6502b062e6cbf660798e804e"
+        },
+        "prompt": "Please expand on this '{prompt}' like an imaginative, creative thinker would depending whatever level is chosen from the list below. Follow given structure\n\nINSTRUCTION:\n\nLevel 1\n- List the key components of\n- Recognize the symptoms of\n- Recall on how to\n- Identify strategies for existing information\n\n\n'''\n<p>\n<strong>Level 1/strong>: [List the key components of, Recognize the symptoms of, Recall on how to, Identify strategies for existing information(use <ul> and <li> list for each of these comma separated values with description and examples for each) ] \n</p>\n\n[and so for each of the levels. Give examples.]\n'''\n\nPlease give a response in html like format\n\nResult: \n\n\n\n",
+        "label": "Level 1 Depth - Structure & Symptoms",
+        "visibility": "public",
+        "actor": {
+            "username": "johndoe"
+        },
+        "__v": 0,
+        "description": "When the user needs to understand the basic framework and signs of a concept."
+    },
+    {
+        "_id": {
+            "$oid": "6502b0bae6cbf660798e8064"
+        },
+        "prompt": "Please expand on this '{prompt}' like an imaginative, creative thinker would depending whatever level is chosen from the list below. Follow given structure\n\nINSTRUCTION:\n''''\nLevel 2\n- Summarise the features of\n- Classify these into categories\n- Clarify the instructions\n- Predict the effects and responses to\n\n'''\n<p>\n<strong>Level 1/strong>: [List the key components of, Recognize the symptoms of, Recall on how to, Identify strategies for existing information(use <ul> and <li> list for each of these comma separated values with description and examples for each) ] \n</p>\n\n[and so for each of the levels. Give examples.]\n'''\n\nPlease give a response in html like format\n\nResult: \n\n\n\n",
+        "label": "Level 2 Depth - Summary of Processes",
+        "visibility": "public",
+        "actor": {
+            "username": "davidlee"
+        },
+        "__v": 0,
+        "description": "When the user seeks a summarized understanding of the processes involved in a topic.\n\n"
+    },
+    {
+        "_id": {
+            "$oid": "6502b107e6cbf660798e8078"
+        },
+        "prompt": "Please expand on this '{prompt}' like an imaginative, creative thinker would depending whatever level is chosen from the list below. Follow given structure\n\nINSTRUCTION:\n\nLevel 3\n- Respond to common questions on with questions as examples\n- Provide advice on\n- Carry out the tasks involved in\n- Use the techniques to accomplish this optimally\n\n'''\n<p>\n<strong>Level 1/strong>: [List the key components of, Recognize the symptoms of, Recall on how to, Identify strategies for existing information(use <ul> and <li> list for each of these comma separated values with description and examples for each) ] \n</p>\n\n[and so for each of the levels. Give examples.]\n'''\n\nPlease give a response in html like format\n\nResult: \n\n\n\n",
+        "label": "Level 3 Depth - Common Questions ",
+        "visibility": "public",
+        "actor": {
+            "username": "emilydavis"
+        },
+        "__v": 0,
+        "description": "When the user wants to address frequently asked questions about a topic."
+    },
+    {
+        "_id": {
+            "$oid": "6502b186e6cbf660798e8097"
+        },
+        "prompt": "Please expand on this '{prompt}' like an imaginative, creative thinker would depending whatever level is chosen from the list below. Follow given structure\n\nINSTRUCTION:\n'''\nLevel 4\n- Select the most appropriate steps to\n- Differentiate between this and known alternatives of \n- Integrate with regulations, compliance for the improvement of\n- Deconstruct as key concepts involved in\n\n'''\n<p>\n<strong>Level 1/strong>: [List the key components of, Recognize the symptoms of, Recall on how to, Identify strategies for existing information(use <ul> and <li> list for each of these comma separated values with description and examples for each.] \n</p>\n\n[and so for each of the levels. Give examples.]\n'''\n\nPlease give a response in html like format\n\nResult: \n\n\n\n",
+        "label": "Level 4 Depth - Advanced Deconstruction",
+        "visibility": "public",
+        "actor": {
+            "username": "davidlee"
+        },
+        "__v": 0,
+        "description": "When the user needs a detailed breakdown of a complex concept."
+    },
+    {
+        "_id": {
+            "$oid": "6502b208e6cbf660798e80ae"
+        },
+        "prompt": "Please expand on this '{prompt}' like an imaginative, creative thinker would depending whatever level is chosen from the list below. Follow given structure\n\nINSTRUCTION:\n'''\nLevel 5\n- Check for the prerequisites for doing\n- Determine the relevance of why is it important\n- Judge the efficiency of operations of\n- Reflect on the benefits, gaps, opportunities, threats of\n\n'''\n<p>\n<strong>Level 1/strong>: [List the key components of, Recognize the symptoms of, Recall on how to, Identify strategies for existing information(use <ul> and <li> list for each of these comma separated values with description and examples for each) ] \n</p>\n\n[and so for each of the levels. Give examples.]\n'''\n\nPlease give a response in html like format\n\nResult: \n\n\n\n",
+        "label": "Level 5 Depth - Benefits, Gaps & Opportunities",
+        "visibility": "public",
+        "actor": {
+            "username": "janesmith"
+        },
+        "__v": 0,
+        "description": "When the user aims to identify the advantages, gaps, and potential opportunities in a topic."
+    },
+    {
+        "_id": {
+            "$oid": "6502b259e6cbf660798e80bd"
+        },
+        "prompt": "Please expand on this '{prompt}' like an imaginative, creative thinker would depending whatever level is chosen from the list below. Follow given structure\n\nINSTRUCTION:\n'''\nLevel 6\n- Generate a presentation outline for\n- Assemble a team of experts for different categories of work involved for\n- Design an effective project workflow in stages and phases for\n- Suggest ideas on innovative proof of concept for\n\n'''\n<p>\n<strong>Level 6/strong>: [List the key components of, Recognize the symptoms of, Recall on how to, Identify strategies for existing information(use <ul> and <li> list for each of these comma separated values with description and examples for each) ] \n</p>\n\n[and so for each of the levels. Give examples.]\n'''\n\nPlease give a response in html like format\n\nResult: \n\n\n\n",
+        "label": "Level 6 Depth - How to do a Project",
+        "visibility": "public",
+        "actor": {
+            "username": "michaelbrown"
+        },
+        "__v": 0,
+        "description": "This prompt encourages learners to explore a concept with comprehensive understanding, planning, and execution of a project related to the idea."
+    },
+    {
+        "_id": {
+            "$oid": "6508aef88a0281943083ea60"
+        },
+        "prompt": "data:\nHashirama Senju | is the First Hokage | in Konohagakure.\nTobirama Senju | is the Second Hokage | in Konohagakure.\nHiruzen Sarutobi | is the Third Hokage | in Konohagakure.\nMinato Namikaze | is the Fourth Hokage | in Konohagakure.\nTsunade Senju | is the Fifth Hokage | in Konohagakure.\nKakashi Hatake | is the Sixth Hokage | in Konohagakure.\nNaruto Uzumaki | is the Seventh Hokage | in Konohagakure.\nMito Uzumaki | is the First Mizukage | in Kirigakure.\nTobirama Senju | is the Second Mizukage | in Kirigakure.\nGengetsu H\u014dzuki | is the Third Mizukage | in Kirigakure.\nYagura Karatachi | is the Fourth Mizukage | in Kirigakure.\nMei Terum\u012b | is the Fifth Mizukage | in Kirigakure.\nA | is the Third Raikage | in Kumogakure.\nB | is the Fourth Raikage | in Kumogakure.\nC | is the Fifth Raikage | in Kumogakure.\nOnoki | is the Third Tsuchikage | in Iwagakure.\nMu | is the Second Tsuchikage | in Iwagakure.\nM\u016b | is the Second Tsuchikage | in Iwagakure.\n\u014cnoki | is the Third Tsuchikage | in Iwagakure.\n\ninstructions: create a structure same as given <data> as sample for the <prompt> at least 20 lines separted with <ul><li>\n\nprompt: ",
+        "label": "Master smart query v1",
+        "visibility": "public",
+        "actor": {
+            "username": "jamesgarcia"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6508af06516b87a2b9b11a12"
+        },
+        "prompt": "DATA:\n\n```\nmode:smart\n\ncreate( \nRam |> eats | Mango. \nMango |> is a type of | Fruit.\nApple |> is a type of | Fruit.\nRam |> was born in | Ayodhya.\n)\n```\nINSTRUCTION:\n\nPlease understand this '{prompt}' and create statements about the {prompt}. Keep the edges as verbs and nodes as entities. Give data in the format like I have shared in DATA and give as many statements as you can. Dont use commas in your result. Dont use numbers like 1.1 2.1 etc.\n\n",
+        "label": "Create a Smart Query",
+        "visibility": "public",
+        "actor": {
+            "username": "robertjohnson"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "650944d08a0281943083f12d"
+        },
+        "prompt": "Describe using top 10 proper nouns connected to the {prompt} \n\nAlso, annotate the text using <b> tag identifying proper nouns, cardinals, concepts, verbs, theme of the phrase in your response. <b> tag in html.\n\nFollow given structure\n\nINSTRUCTION:\n\n'''\n<p>\n<strong>About</strong>: [Create bullet points and short descriptions(use <ul> and <li> list) in bold followed by descriptions not in bold. ] \n</p>\n\n'''\n\nPlease give a response in html like format\n\nResult: \n",
+        "label": "Give me a Gist",
+        "visibility": "public",
+        "actor": {
+            "username": "johndoe"
+        },
+        "__v": 0,
+        "description": "When the user wants a brief summary of a topic or concept."
+    },
+    {
+        "_id": {
+            "$oid": "65098c0f8a0281943083f553"
+        },
+        "prompt": "Identify top 10 properties and attributes about the {prompt} using name value pairs\n\nFollow given structure\n\nINSTRUCTION:\n\n'''\n<p>\n<strong>Properties</strong>: [(use <ul> and <li> list)] \n</p>\n\n'''\n\nPlease give a response in html like format. You may use comma separated values for properties which have one to many relationships\n\nResult: \n",
+        "label": "Properties & Attributes",
+        "visibility": "public",
+        "actor": {
+            "username": "emilydavis"
+        },
+        "__v": 0,
+        "description": "When the user needs to identify and understand the characteristics of a topic."
+    },
+    {
+        "_id": {
+            "$oid": "6509978d8a0281943083f703"
+        },
+        "prompt": "DATA:\n```\n<pre>\n{\n    \"nodes\": [\n        {\n            \"id\": \"pkkarn\",\n            \"label\": \"PK Karn\",\n            \"props\": {\n                \"Occupation\": {\n                    \"type\": \"custom\",\n                    \"value\": \"Developer\"\n                }\n            }\n        },\n        {\n            \"id\": \"Navin Dutta\",\n            \"label\": \"Navin Dutta\",\n            \"props\": {\n                \"Ceo of\": {\n                    \"type\": \"custom\",\n                    \"value\": \"Edvanta\"\n                }\n            }\n        },\n        {\n            \"id\": \"Edvanta\",\n            \"label\": \"Edvanta\",\n            \"props\": {\n                \"type\": {\n                    \"type\": \"custom\",\n                    \"value\": \"Organization\"\n                },\n                \"no. of employees\": {\n                    \"type\": \"custom\",\n                    \"value\": \"271\"\n                }\n            }\n        }\n    ],\n    \"edges\": [\n        {\n            \"source\": \"pkkarn\",\n            \"target\": \"Edvanta\",\n            \"label\": \"works\",\n            \"style\": {\n                \"endArrow\": true\n            }\n        },\n        {\n            \"source\": \"Navin Dutta\",\n            \"target\": \"Edvanta\",\n            \"label\": \"founder\",\n            \"style\": {\n                \"endArrow\": true\n            }\n        },\n        {\n            \"source\": \"Navin Dutta\",\n            \"target\": \"pkkarn\",\n            \"label\": \"friends\",\n            \"style\": {\n                \"endArrow\": true\n            }\n        }\n    ]\n}\n</pre>\n```\n\nGiven a {prompt} generate a graph data like given format of DATA and make sure there are 10 properties(props) in each of the node\n\nDATA:\n",
+        "label": "Property Graph",
+        "visibility": "public",
+        "actor": {
+            "username": "robertjohnson"
+        },
+        "__v": 0,
+        "description": "When the user wants to visualize the relationships between different properties of a topic."
+    },
+    {
+        "_id": {
+            "$oid": "652265202f8281200817acaf"
+        },
+        "prompt": "Tell me about the raga parichay from the '{prompt}' using their Vaadi, Samvaadi, Aarohana, Avrohana, Pakad, Chalan, Vivadi. Follow given structure.\n\nKindly ensure to use camel case for full notes, and lowercase for half notes like given in the examples below.\n\nINSTRUCTION:\n\n'''\nFor example\n<h4>Raag Bhairavi</h4>\n<p>\n<strong>Vaadi & Samvadi</strong>: \n<ul><li>Vadi : ma</li>\n<li>Samavadi : Sa</li></ul>\n</p>\n\n<p>\n<strong>Komal Swar & \nType of Ma </strong>:\n<ul><li>Komal Swar : re ga dha ni</li>\n<li>Type of Ma : ma[Shudha Ma or Tivra Ma# Choose according to {prompt}]</li></ul> \n</p>\n\n<p>\n<strong>Aarohana & Avarohana</strong>:\n<ul><li>Arohana : Sa re ga ma Pa dha ni \u1e60a</li>\n<li>Avarohana : \u1e60a ni dha Pa ma ga re Sa</li></ul> \n</p>\n\n<p>\n<strong>Pakad & Chalan</strong>:[answer here]\n</p>\n\nAnd so on... \n\n'''\n\nPlease give a response in html like format. \n\nResult: \n",
+        "label": "Raga Description",
+        "visibility": "public",
+        "actor": {
+            "username": "lauramartin"
+        },
+        "__v": 0,
+        "description": "When the user needs to learn about a specific musical scale or mode, especially in Indian classical music."
+    },
+    {
+        "_id": {
+            "$oid": "6538ec4b52e92d611f4ceb8a"
+        },
+        "prompt": "On the {prompt} create step by step  how to statements collected under relevant categories using which I dig deeper and learn things in the nitty gritty.\n\nThese how to statements should be descriptive enough in the header such that I can good videos on the broken phrases.\n\nGive me response in html only. Dont talk to me.\n\nProvide relevant urls where you can.",
+        "label": "How-to",
+        "visibility": "public",
+        "actor": {
+            "username": "davidlee"
+        },
+        "__v": 0,
+        "description": "When the user seeks step-by-step instructions on performing a task or understanding a concept."
+    },
+    {
+        "_id": {
+            "$oid": "65391ae1b54291a916be4040"
+        },
+        "prompt": "DATA:\n```\n<pre>\n{\n   \"type\":\"SingleQuestion\",\n   \"params\":{\n      \"content\":[\n         {\n            \"type\":\"SingleChoice\",\n            \"question\":\"What does HTML stand for?\",\n            \"answers\":[\n               {\n                  \"text\":\"Hyper Text Markup Language\",\n                  \"correct\":true\n               },\n               {\n                  \"text\":\"Hyperlinks and Text Markup Language\",\n                  \"correct\":false\n               },\n               {\n                  \"text\":\"Home Tool Markup Language\",\n                  \"correct\":false\n               },\n               {\n                  \"text\":\"Hyper Tool Markup Language\",\n                  \"correct\":false\n               }\n            ]\n         }\n      ]\n   }\n}\n\n</pre>\n```\n\nGiven a {prompt} generate a question with answer options in graph data like given format of DATA. Randomize the order for the correct answer in options.\n\nDATA:\n",
+        "label": "Single Question Export",
+        "visibility": "public",
+        "actor": {
+            "username": "janesmith"
+        },
+        "__v": 0,
+        "description": "When the user wants to generate and save a single question related to their study."
+    },
+    {
+        "_id": {
+            "$oid": "65391e77b54291a916be40e7"
+        },
+        "prompt": "DATA:\n```\n<pre>\n{\n   \"type\":\"MultiQuestionSet\",\n   \"params\":{\n      \"content\":[\n         {\n            \"type\":\"MultiChoice\",\n            \"question\":\"What does HTML stand for?\",\n            \n            \"answers\":[\n               {\n                  \"text\":\"Hyper Text Markup Language\",\n                  \"correct\":true\n               },\n               {\n                  \"text\":\"Hyperlinks and Text Markup Language\",\n                  \"correct\":false\n               },\n               {\n                  \"text\":\"Home Tool Markup Language\",\n                  \"correct\":false\n               },\n               {\n                  \"text\":\"Hyper Tool Markup Language\",\n                  \"correct\":false\n               }\n            ]\n         },\n         {\n            \"type\":\"MultiChoice\",\n            \"question\":\"Full Form of PHP?\",\n\n            \"answers\":[\n               {\n                  \"text\":\"Hypertext Preprocessor\",\n                  \"correct\":true\n               },\n               {\n                  \"text\":\"Preprocessor Hypertext\",\n                  \"correct\":false\n               },\n               {\n                  \"text\":\"Personal Home Page\",\n                  \"correct\":false\n               },\n               {\n                  \"text\":\"None\",\n                  \"correct\":false\n               }\n            ]\n         },\n         {\n            \"type\":\"truefalse\",\n            \"question\":\"Is sky blue?\",\n            \n            \"answers\":[\n               {\n                  \"text\":\"True\"\n               },\n               {\n                  \"text\":\"False\"\n               }\n            ],\n            \"correctAnswer\":\"true\"\n         },\n         {\n            \"type\":\"fillblanks\",\n            \"question\":\"Fill in the missing words\",\n\n            \"answers\":[\n               {\n                  \"text\":\"*Delhi* is capital of india?\"\n               },\n               {\n                  \"text\":\"HTML uses *tags* to structure content, while PHP is a *server*-side scripting language for web development\"\n               },\n               {\n                  \"text\":\"2+2 = *4*\"\n               }\n            ]\n         }\n      ]\n   }\n}\n</pre>\n```\n\nGiven a {prompt} generate a question set with answer options in graph data like given format of DATA. Randomize the order for the correct answer in options so that it is in different order.\n\nDATA:\n",
+        "label": "Question Set Export",
+        "visibility": "public",
+        "actor": {
+            "username": "johndoe"
+        },
+        "__v": 0,
+        "description": "When the user needs to create and save a set of related questions for review or practice.\n\n"
+    },
+    {
+        "_id": {
+            "$oid": "653f7dbba5e9aeec13522845"
+        },
+        "prompt": "Please define this '{prompt}' in small paragraphs in shuddh kannada (at least 50 words in each paragraph using <p> tag in html). use bullet points using <ul><li> where neccessary to illustrate things clrearly. Keep a total response output of 500 words.",
+        "label": "Explain in Kannada",
+        "visibility": "private",
+        "actor": {
+            "username": "janesmith"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "653fd35ca39e147c86a98ac3"
+        },
+        "prompt": "DATA:\n```\n<pre>\n{\n    \"nodes\": [\n        {\n            \"id\": \"pkkarn\",\n            \"label\": \"PK Karn\",\n            \"props\": {\n                \"Occupation\": {\n                    \"type\": \"custom\",\n                    \"value\": \"Developer\"\n                }\n            }\n        },\n        {\n            \"id\": \"Navin Dutta\",\n            \"label\": \"Navin Dutta\",\n            \"props\": {\n                \"Ceo of\": {\n                    \"type\": \"custom\",\n                    \"value\": \"Edvanta\"\n                }\n            }\n        },\n        {\n            \"id\": \"Edvanta\",\n            \"label\": \"Edvanta\",\n            \"props\": {\n                \"type\": {\n                    \"type\": \"custom\",\n                    \"value\": \"Organization\"\n                },\n                \"no. of employees\": {\n                    \"type\": \"custom\",\n                    \"value\": \"271\"\n                }\n            }\n        }\n    ],\n    \"edges\": [\n        {\n            \"source\": \"pkkarn\",\n            \"target\": \"Edvanta\",\n            \"label\": \"works\",\n            \"style\": {\n                \"endArrow\": true\n            }\n        },\n        {\n            \"source\": \"Navin Dutta\",\n            \"target\": \"Edvanta\",\n            \"label\": \"founder\",\n            \"style\": {\n                \"endArrow\": true\n            }\n        },\n        {\n            \"source\": \"Navin Dutta\",\n            \"target\": \"pkkarn\",\n            \"label\": \"friends\",\n            \"style\": {\n                \"endArrow\": true\n            }\n        }\n    ]\n}\n</pre>\n```\nGive the data strictly in the DATA format defined. How are the items in the {prompt} related to each other? Update the source and target nodes with the relevant relationship. Use simple descriptions for defining this relationship. Use directed relationships where you can. Dont use sample data. Use fact based data only. You can become descriptive in creating a sequence of source and target nodes, as nouns and their relationship as verbs.\n\nDATA:\n",
+        "label": "Identify the Relationship ",
+        "visibility": "public",
+        "actor": {
+            "username": "emilydavis"
+        },
+        "__v": 0,
+        "description": "When the user needs to understand the connections between different concepts or entities."
+    },
+    {
+        "_id": {
+            "$oid": "6548cb987a0bff2f08321feb"
+        },
+        "prompt": "If I want to learn about the given '{prompt}' what are the appropriate questions I should ask. \n\nInstructions:\n\nthe questions as array in json notation.\nexample: { questions: [ \"What is a tree in the context of data structures?\",\n    \"Why are trees important in computer science and data structures?\"]\n}\n\nDo not repeat your questions or answers. Only give a response. Dont talk to me.",
+        "label": "Question I should ask?",
+        "visibility": "public",
+        "actor": {
+            "username": "johndoe"
+        },
+        "__v": 0,
+        "description": "When the user wants to know which questions will deepen their understanding of a topic."
+    },
+    {
+        "_id": {
+            "$oid": "654b1bbf7a0bff2f0832240d"
+        },
+        "prompt": "In no more than 100 words, give me a quick summary of the {prompt} in sentences separated by paragraph <p> tags in html. Use bullet points to illustrate quick detail using <ul><li> tags.\n\nAlso give me 3 amusing questions to go after, under the heading <h4>Amusing facts</h4>\n\nAlso please ensure to use {prompt} language to output content.",
+        "label": "Quick Summary",
+        "visibility": "public",
+        "actor": {
+            "username": "davidlee"
+        },
+        "__v": 0,
+        "description": "When the user needs a rapid overview of a topic."
+    },
+    {
+        "_id": {
+            "$oid": "65547ea9172820cbb8af492e"
+        },
+        "prompt": "In no more than 100 words, give me a quick summary of the {prompt} in sentences separated by paragraph <p> tags in html. Use bullet points to illustrate quick detail using <ul><li> tags. Keep it as informative as you can and change your narrative for subsequent questions to keep it interesting.\n\nAlso give me 3 amusing questions to go after, under the heading <h4>Amusing facts</h4>\n\nAlso, annotate the text using <b> tag identifying proper nouns, cardinals, concepts, verbs, theme of the phrase in your response. <b> tag in html.\n",
+        "label": "Annotated Summary",
+        "visibility": "public",
+        "actor": {
+            "username": "jamesgarcia"
+        },
+        "__v": 0,
+        "description": "When the user wants a summary with detailed annotations and explanations."
+    },
+    {
+        "_id": {
+            "$oid": "65547fa9f3fc648fa5731a4f"
+        },
+        "prompt": "<p>\n<strong>Description</strong>: <b>[Offer a comprehensive description of 'Topic modeling based on text network analysis and visualization', emphasizing its central concepts and methodologies. Highlight the key points using HTML <b> tags.]</b>\n</p>\n\n<p>\n<strong>Central Ideas in Text Network Analysis</strong>: \n<ul>\n[Identify and list the central ideas and techniques of text network analysis in bullet points using <ul> and <li> tags. Explain why these ideas are critical for understanding topic modeling within discourses.]\n</ul>\n</p>\n\n<p>\n<strong>Patterns in Open Survey Answers</strong>: \n<ul>\n[Detail how text network analysis can be used to find patterns in open survey answers. Use <ul> and <li> tags for listing these methodologies and their applications, explaining their contributions to the overall understanding of discourse analysis.]\n</ul>\n</p>\n\n<p>\n<strong>Technical Analysis and Visualization Techniques</strong>:\n[Provide an in-depth technical analysis of the visualization techniques used in text network analysis. Discuss the role of these techniques in revealing patterns and topics in large text datasets.]\n</p>\n\n<p>\n<strong>Implications and Case Studies</strong>:\n[Discuss real-world applications and implications of topic modeling through text network analysis. Include case studies or examples where this method has been effectively used. Conclude by summarizing the impact of this approach in the field of data analysis.]\n</p>\n",
+        "label": "Learn as Expert with Central Ideas ",
+        "visibility": "public",
+        "actor": {
+            "username": "janesmith"
+        },
+        "__v": 0,
+        "description": "When the user wants to focus on the core concepts to gain an expert-level understanding.\n\n"
+    },
+    {
+        "_id": {
+            "$oid": "6555edc5172820cbb8af4a73"
+        },
+        "prompt": "Explain the {prompt} as a mathematical expressing assuming a usecase which you need to explain to me. Explain each of the variables. Use small paragraphs <p> and bullet points using <ul> <li> tags in html.\n\nAlso, annotate the text using <b> tag identifying proper nouns, cardinals, concepts, verbs, theme of the phrase in your response. <b> tag in html.",
+        "label": "Tell me the Mathematical Formula",
+        "visibility": "public",
+        "actor": {
+            "username": "robertjohnson"
+        },
+        "__v": 0,
+        "description": "When the user needs the relevant mathematical equations or formulas for a topic.\n\n"
+    },
+    {
+        "_id": {
+            "$oid": "657c828bc4d9f79f07ebeb1c"
+        },
+        "prompt": "Give me answer using this {prompt} as an anchor to create a list of comma separated values\n\n{Instructions}\nGive me comma separated values like given in the example:\n\"bootstrap, css, html, apple, mango\"\n\nResult: ",
+        "label": "Convert to csv",
+        "visibility": "public",
+        "actor": {
+            "username": "davidlee"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "658099d5c4d9f79f07ec2909"
+        },
+        "prompt": "DATA:\n```\n<pre>\n# Import necessary libraries\nimport numpy as np\nimport statsmodels.api as sm\nfrom statsmodels.stats.diagnostic import het_breuschpagan\n\n# Generate some sample data\nx = np.random.normal(0, 1, 100)\ny = 2*x + np.random.normal(0, 1, 100)\n\n# Fit the ordinary least squares (OLS) model\nX = sm.add_constant(x)\nmodel = sm.OLS(y, X).fit()\n\n# Perform the Breusch-Pagan test for heteroscedasticity\n_, p_value, _, _ = het_breuschpagan(model.resid, X)\nif p_value < 0.05:\n    print(\"Heteroscedasticity detected\")\nelse:\n    print(\"No heteroscedasticity detected\")\n</pre>\n\n<b>Explanation to Heteroscedasticity</b> \n\n<ul>\n<li>\nHeteroscedasticity refers to the situation where the variability of the residuals (or errors) in a regression model is not constant across all levels of the independent variables.\n</li>\n<li>One method for dealing with heteroscedasticity is to use the Ordinary Least Squares (OLS) method. \n</li>\n(and so ...)\n</ul>\n```\nInstruction:\n\nExplain this {prompt} so that I can write code in the mentioned scripting language. \n\nExplain your code well, step by step using comments. \n\nGive some examples as applications of the concept in question. I have shown a sample example in the given EXAMPLE.\n\nOutput everything as code available in code block as shown in EXAMPLE and encapsulate it in <pre> tag in html under Result.\n\nGive your explanation in bold using <b> tag in html as header. Give me a bulleted list of sentences using <ul><li></li><ul> tag to summarise the explanation well.\n\nResult:\n\nDATA:\n\n",
+        "label": "Code Devil Ultra 2",
+        "visibility": "public",
+        "actor": {
+            "username": "janesmith"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "65b0e31eb413942d9fea0e74"
+        },
+        "prompt": "Create simple roleplay with story events in each response of yours and explain the relevance of everything I ask you in absolutely not more than 10 words at a time. Use <p> tags and give response in html. \n\nPlease remember the storyline and continue the story in my next search so that these a fragments of a bigger exploration journey. \n\nInstructions:\n\nIf I want to learn about the given '{prompt}' give me some interesting fun fact, some direction on how can I learn more about it along with what are the appropriate questions I should ask. \n\nContinue the story from your memory and put spotlight on the topic {prompt} and then also towads the end give me questions as bulleted list of 3 bullets only. Use small paragraphs with bullets in html using <p> <ul> <li> tags.\n\nLet us assume, for this example that we are talking about Homer's odyssey. Then tell me things like\nexample: { questions: [ \"How did Homer meet Penelope?\",\n    \"What were the realisations of Homer during his journey through life?\"]\n}\n\nDo not repeat your questions or answers.",
+        "label": "TJ's Guide to Galaxy",
+        "visibility": "public",
+        "actor": {
+            "username": "annamartinez"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "65b2062c29c1e7e33ca7359c"
+        },
+        "prompt": "Let us do a roleplay of the {prompt} situation with examples, as Example 1, Example 2, Examples 3. Give me 3 examples. \n\nNow use these 5 roles to interact with each other in at least 5 situations that are connected together. \n\nFollow given structure\n\nINSTRUCTION:\n\nIf I want to learn about the given '{prompt}' so give me some interesting fun fact while this roleplay happens, and also give me appropriate questions I should ask as 3 bullet points in <ul><li> tags in html\n\n\n'''\n<p>\n<strong>Roles used:</strong>: [List the 3role and its specifics(use <ul> and <li> list). ] \n</p>\n<hr />\n\n<p>\n<strong>Situation No. 1</strong>:[Define the situation]\n</p>\n\n<p>\n<strong>[Role No. 1's name] says</strong>:[Define what how roles interact with each other using example phrases. and so on.]\n</p>\n\n<p>\n<strong>Follow up Situation:</strong>: [List the follow up situation and let the roles interact with each other ] \n</p>\n\n'''\n\nPlease give a response in html like format\n\nResult: \n",
+        "label": "Roleplaying in Galaxy",
+        "visibility": "public",
+        "actor": {
+            "username": "robertjohnson"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "65d5de2483ad6e3c2ac5f18a"
+        },
+        "prompt": "{Nikhil's state of mind: happy, sad, frustrated, angry, upset, motivated}\n{Nikhil's purpose in life: wants to work for a big organisation and earn money}\n{Possible Character Animations:- nods, agrees, disagrees, smirks, looks away, looks down, satisfied, happy, sad, upset, focused, listening} \n\n{Possible Character Expressions:  {state of mind}}\n\nLet us assume our primary character is Nikhil, a student.\n\nLet us do a roleplay of the {prompt} situation in Nikhil's life with examples, as Example 1, Example 2, Examples 3. Give me 3 examples. \n\n Now use 5 random roles to interact with each other in at least 5 situations that are connected together. \n\nFollow given structure\n\nINSTRUCTION:\n\n'''\n<p>\n<strong>Roles used:</strong>: [List the 3role and its specifics(use <ul> and <li> list). ] \n</p>\n<hr />\n\n<p>\n<strong>Situation No. 1</strong>:[Define the situation]\n</p>\n\n<p>\n<strong>[Role No. 1's name] says</strong>:[Define what how roles interact with each other using example phrases. and so on.][From the list {List mos appropriate Character Animations] [choose the most relevant Character Expressions} ]\n</p>\n\n<p>\n<strong>[Role No. 1's name] says</strong>:[Give a follow up 2 choices to the user to make a decision]\n</p>\n\n<p>\n<strong>[Nikhil] says</strong>:[Give a follow up 2 choices to the user to make a decision]\n</p>\n\n{and so on...}\n\n[Echo <hr />]\n\n<p>\n<strong>Follow up Situation:</strong>: [List the follow up situation for each of the two choices and let the roles interact with each other based on choices ] \n</p>\n\n[Echo <hr />]\n\n[Echo the phrase in html \"Before you do that choose next logical step...\"]\n\n[Echo <hr />]\n\n<p>\n<strong>Follow up Action Choice 1:</strong>: [From the perspective of learning,  list out a phrase that can be used to watch a video explaining the choice concept. List the search phrase for choice number 1 inside quotes \"\".Strip text like \"Watch a video\" from the search phrase] \n</p>\n\n<p>\n<strong>Follow up Action Choice 2:</strong>: [From the perspective of learning,  list out a phrase that can be used to search for an article explaining the choice concept.  List the search phrase for choice number 1 inside quotes \"\". Strip texts like \"Search an article\" from the search phrase.\n</p>\n\n<p>\n<strong>Follow up Action Choice 3:</strong>: [Assign a task for the user to do. Describe it well with a goal and keep it realistic and relevant to the previous situation in quotes \"\". ] \n</p>\n\n[Echo <hr />]\n\n<p>\n<strong>Next Situation</strong>:[Define the situation]\n</p>\n\n<p>\n[Create a follow up action with another two choices to continue the dialogue.] \n</p>\n\n\n\n'''\n\nPlease give a response in html like format\n\nResult: \n",
+        "label": "Roleplay choice based learning",
+        "visibility": "public",
+        "actor": {
+            "username": "johndoe"
+        },
+        "__v": 0,
+        "description": "When the user wants to explore different outcomes through role-playing choices."
+    },
+    {
+        "_id": {
+            "$oid": "65d655d183ad6e3c2ac5f509"
+        },
+        "prompt": "Prompt:\n\nGiven a seed from {prompt}and a primary character's profile and purpose, generate a JSON template to create a narrative scene. The JSON template should include the following structure:\n\nScene: Contains the entire story.\nStory: Describes the narrative arc.\nCharacters: Profiles of the characters involved in the scene.\nName: The character's name.\nRole: The character's role in the scene.\nSituation: A brief description of the character's situation in the scene.\nSituation: Details the current situation in the narrative.\nNarration: Provides the dialogue and choices for each character.\nCharacter: The speaking character's name.\nDialogue: The character's dialogue or thoughts.\nChoices: Options available to the character, each with an associated action.\nAction: The action taken by the character.\nFollowupSituation: Describes the next situation in the narrative.\nThe JSON template should be structured based on the provided seed and primary character's profile and purpose, ensuring coherence and relevance to the narrative.\n\n",
+        "label": "Prompt based learning",
+        "visibility": "public",
+        "actor": {
+            "username": "annamartinez"
+        },
+        "__v": 0,
+        "description": "When the user seeks to learn through guided prompts and questions."
+    },
+    {
+        "_id": {
+            "$oid": "65e4976183ad6e3c2ac5fe97"
+        },
+        "prompt": "Extract all keyphrases for the neccessary topics that i can learn about and also extract a common seed phrase that contextualises each of the topics.\nPresent the extracted keyphrases and the common seed phrase in HTML code format. Use appropriate HTML elements to structure the content, such as headings for different sections, lists for keyphrases, and a paragraph for the common seed phrase. Ensure that the HTML code is well-structured and easy to read, making it presentable and informative.",
+        "label": "Extract the key phrases",
+        "visibility": "public",
+        "actor": {
+            "username": "jamesgarcia"
+        },
+        "__v": 0,
+        "description": "When the user needs to identify and focus on the most important phrases in a text."
+    },
+    {
+        "_id": {
+            "$oid": "65fd5735bb94173b984a7c17"
+        },
+        "prompt": "Turn this {prompt} in 10 multiple choice questions with options as radio buttons [input type=rodio] options. Please dont repeat the questions.\n\n{Instructions}\nGive some examples. Use <hr /> tags to separate the questions. (Write everything in html format)(at least 300 words or more than that))\n\nresult shouldn't have ``` or html written anywhere also options should in al (<ul><li></li></ul>)\n\n'''\n<h4>\n<strong>Question No. 1</strong>: [Ask the question and give the options as radio buttons as instructed ] \n</h4>\n\n<hr />\n\n'''\n\nPlease give a response in html like format. Give all the answers after you have asked all the questions number wise towards the end after the <hr /> tag.\n\n'''\n<hr />\n\n<p>\n<strong>Answers</strong>: \nQ1. [Answer to the Question 1]\n</p>\n\n'''\nResult: ",
+        "label": "Take a Quiz",
+        "visibility": "public",
+        "actor": {
+            "username": "lauramartin"
+        },
+        "__v": 0,
+        "description": "When the user wants to test their knowledge with a set of questions."
+    },
+    {
+        "_id": {
+            "$oid": "6667638b5145dcff5eb706d5"
+        },
+        "prompt": "Using a story explain this {prompt}. Give me the text that can be typed in 1 minute only with a speed of 30WPM",
+        "label": "Typing Master",
+        "visibility": "public",
+        "sharedAccess": [],
+        "actor": {
+            "username": "lauramartin"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "666763951935d1c355aae664"
+        },
+        "prompt": "Using a story explain this {prompt}. Give me the text in not more than 30 words",
+        "label": "Type and learn",
+        "visibility": "public",
+        "actor": {
+            "username": "johndoe"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "667dbaf5421e0fb510b96288"
+        },
+        "prompt": "Overview\nWelcome to the Intelligent Chart Generator, an advanced tool designed to help you create the most suitable and insightful charts based on your dataset. Whether you're dealing with continuous data, categorical variables, or time-series information, this tool intelligently assesses your data and recommends or generates the best visual representation for it.\n\nFeatures\nAutomated Data Assessment:\n\nData Profiling: Automatically examines your dataset to identify data types (numerical, categorical, time-series) and evaluate data consistency.\nMissing Data Handling: Provides options to handle missing data through imputation, removal, or annotation.\nChart Recommendations:\n\nContinuous Variables: Suggests histograms, density plots, scatter plots, or 3D surface plots for continuous data.\nCategorical Variables: Recommends bar charts, count plots, or pie charts for categorical data.\nTime Series: Offers line charts, time series decomposition plots, and annotated trend charts.\nInteractive Charts:\n\nCustomization: Allows customization of chart aesthetics, including colors, labels, titles, and annotations.\nInteractivity: Provides options to make charts interactive for better data exploration and presentation.\nAdvanced Analytics:\n\nRegression Analysis: Generates scatter plots with regression lines, displaying the relationship between dependent and independent variables.\nClustering: Creates cluster plots to visualize grouped data points based on clustering algorithms like KMeans.\nMulti-plot Layouts:\n\nDashboard Creation: Combines multiple charts into a cohesive dashboard for comprehensive data analysis.\nLinked Views: Synchronizes different charts for interactive, multi-dimensional data analysis.\nHow to Use\nUpload Your Dataset:\n\nSupported formats include CSV, Excel, and JSON.\nEnsure your dataset is well-formatted with clear headers.\nData Assessment:\n\nThe tool will automatically assess your data and suggest potential issues or enhancements (e.g., handling missing values, data normalization).\nSelect Chart Type:\n\nBased on the data assessment, you will receive chart type recommendations that best suit your dataset.\nYou can choose to follow the recommendations or select a different chart type from the menu.\nCustomize Your Chart:\n\nAdjust chart parameters such as color schemes, axis labels, and titles.\nAdd annotations to highlight key insights or trends.\nGenerate and Download:\n\nGenerate your chart or dashboard.\nDownload the output in various formats (PNG, PDF, HTML) or share it directly.\nExample Scenarios\nExploratory Data Analysis (EDA):\n\nPerform EDA by generating histograms for each continuous variable, bar charts for categorical variables, and scatter plots for paired relationships.\nTime Series Analysis:\n\nIdentify trends, seasonality, and residuals in your time series data through decomposition plots and annotated time series charts.\nRegression and Correlation:\n\nVisualize the relationship between variables using scatter plots with regression lines and correlation heatmaps.\nCluster Analysis:\n\nUnderstand data grouping by generating cluster plots using clustering algorithms like KMeans.\nAdvanced Usage\nFor users with specific analytical needs or complex datasets, the tool offers advanced options:\n\nCustom Scripting Interface: Allows integration of custom code snippets (Python, R) for bespoke data transformations and visualizations.\nAPI Access: Provides API endpoints for automated chart generation and integration into data pipelines.\nConclusion\nThe Intelligent Chart Generator is your go-to tool for turning raw data into meaningful visual insights. By leveraging its automated assessment and intelligent recommendations, you can ensure your data is presented in the most informative and engaging way possible.\n\nThis prompt description should serve as a comprehensive guide for a tool designed to create the right charts by assessing available data, catering to both novice and advanced users in data analytics.\n\nGreat! Can you create a sample report dashboard using this prompt description in python using mutiple matplotlib chartgs\n\n",
+        "label": "Create Interesting charts on matplotlib",
+        "visibility": "public",
+        "sharedAccess": [],
+        "description": "Overview\nWelcome to the Intelligent Chart Generator, an advanced tool designed to help you create the most suitable and insightful charts based on your dataset. Whether you're dealing with continuous data, categorical variables, or time-series information, this tool intelligently assesses your data and recommends or generates the best visual representation for it.\n\nFeatures\nAutomated Data Assessment:\n\nData Profiling: Automatically examines your dataset to identify data types (numerical, categorical, time-series) and evaluate data consistency.\nMissing Data Handling: Provides options to handle missing data through imputation, removal, or annotation.\nChart Recommendations:\n\nContinuous Variables: Suggests histograms, density plots, scatter plots, or 3D surface plots for continuous data.\nCategorical Variables: Recommends bar charts, count plots, or pie charts for categorical data.\nTime Series: Offers line charts, time series decomposition plots, and annotated trend charts.\nInteractive Charts:\n\nCustomization: Allows customization of chart aesthetics, including colors, labels, titles, and annotations.\nInteractivity: Provides options to make charts interactive for better data exploration and presentation.\nAdvanced Analytics:\n\nRegression Analysis: Generates scatter plots with regression lines, displaying the relationship between dependent and independent variables.\nClustering: Creates cluster plots to visualize grouped data points based on clustering algorithms like KMeans.\nMulti-plot Layouts:\n\nDashboard Creation: Combines multiple charts into a cohesive dashboard for comprehensive data analysis.\nLinked Views: Synchronizes different charts for interactive, multi-dimensional data analysis.\nHow to Use\nUpload Your Dataset:\n\nSupported formats include CSV, Excel, and JSON.\nEnsure your dataset is well-formatted with clear headers.\nData Assessment:\n\nThe tool will automatically assess your data and suggest potential issues or enhancements (e.g., handling missing values, data normalization).\nSelect Chart Type:\n\nBased on the data assessment, you will receive chart type recommendations that best suit your dataset.\nYou can choose to follow the recommendations or select a different chart type from the menu.\nCustomize Your Chart:\n\nAdjust chart parameters such as color schemes, axis labels, and titles.\nAdd annotations to highlight key insights or trends.\nGenerate and Download:\n\nGenerate your chart or dashboard.\nDownload the output in various formats (PNG, PDF, HTML) or share it directly.\nExample Scenarios\nExploratory Data Analysis (EDA):\n\nPerform EDA by generating histograms for each continuous variable, bar charts for categorical variables, and scatter plots for paired relationships.\nTime Series Analysis:\n\nIdentify trends, seasonality, and residuals in your time series data through decomposition plots and annotated time series charts.\nRegression and Correlation:\n\nVisualize the relationship between variables using scatter plots with regression lines and correlation heatmaps.\nCluster Analysis:\n\nUnderstand data grouping by generating cluster plots using clustering algorithms like KMeans.\nAdvanced Usage\nFor users with specific analytical needs or complex datasets, the tool offers advanced options:\n\nCustom Scripting Interface: Allows integration of custom code snippets (Python, R) for bespoke data transformations and visualizations.\nAPI Access: Provides API endpoints for automated chart generation and integration into data pipelines.\nConclusion\nThe Intelligent Chart Generator is your go-to tool for turning raw data into meaningful visual insights. By leveraging its automated assessment and intelligent recommendations, you can ensure your data is presented in the most informative and engaging way possible.\n\nThis prompt description should serve as a comprehensive guide for a tool designed to create the right charts by assessing available data, catering to both novice and advanced users in data analytics.\n",
+        "type": "",
+        "subtype": "",
+        "actor": {
+            "username": "emilydavis"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "667e513f287e6c65b5add651"
+        },
+        "prompt": "Create a detailed chronological timeline that highlights the key events of '{prompt}'. Include specific dates, major milestones, significant developments, and any relevant background information that provides context to the events. The timeline should be comprehensive and cover the most important aspects of the topic from its inception to the present day. Ensure that the information is presented clearly and concisely, with each event marked with its corresponding date or time period. Additionally, provide brief explanations or descriptions for each key event to enhance understanding. If applicable, include any notable figures, innovations, or impacts related to the events in the timeline. \nPlease present the timeline in HTML code format, using appropriate HTML elements to structure the content. Each event should be formatted as a list item within an ordered list, with the date or time period as a heading and the description as a paragraph. Ensure that the HTML code is well-structured and easy to read.\"",
+        "label": "Explain through a timeline",
+        "visibility": "public",
+        "sharedAccess": [],
+        "actor": {
+            "username": "janesmith"
+        },
+        "__v": 0,
+        "description": "When the user wants to understand a sequence of events chronologically.\n\n"
+    },
+    {
+        "_id": {
+            "$oid": "667e5bfb2d18558c87628dea"
+        },
+        "prompt": "Provide a comprehensive explanation of '{prompt}' , including an overview of the main concepts, significant details, and important aspects related to the topic. To make the explanation engaging, scatter trivia and fascinating facts throughout the text. Ensure that the information is presented clearly and concisely, making it accessible and interesting to a wide audience.\n\nAdditionally, please present the information in HTML code format. Use appropriate HTML elements to structure the content, such as headings for different sections, paragraphs for explanations, and lists for trivia and fascinating facts. Ensure that the HTML code is well-structured and easy to read",
+        "label": "Explain and give trivia and facts",
+        "visibility": "public",
+        "sharedAccess": [],
+        "actor": {
+            "username": "michaelbrown"
+        },
+        "__v": 0,
+        "description": "When the user wants explanation with additional interesting information and facts about a topic."
+    },
+    {
+        "_id": {
+            "$oid": "667e642a2d18558c87628ee0"
+        },
+        "prompt": "Adapt the literary work '{prompt}' into a different format. Please specify which format you would like the adaptation to be in (e.g., play, screenplay, poem, etc.). Ensure that the adaptation captures the essence and main themes of the original work, while making the necessary adjustments to fit the new format, don't edit too much of the matter out in the final product. Include key elements such as character dialogue, stage directions, and scene descriptions if adapting into a play or screenplay.\n\nAdditionally, please present the adaptation in HTML code format. Use appropriate HTML elements to structure the content, such as headings for different sections, paragraphs for dialogue and descriptions, and lists for any important points. Ensure that the HTML code is well-structured and easy to read.",
+        "label": "Adapt the literary work into a different format.",
+        "visibility": "public",
+        "sharedAccess": [],
+        "actor": {
+            "username": "johndoe"
+        },
+        "__v": 0,
+        "description": "When the user wants to transform a literary piece into another format, like a play or movie script."
+    },
+    {
+        "_id": {
+            "$oid": "667e67ab2d18558c87628fd8"
+        },
+        "prompt": "Explain '{prompt}'  through a storyboard. Break down the explanation into a series of visual panels or frames, each representing a key point or step in the topic. Each panel should include a description of the visual elements, along with any accompanying text or dialogue that helps to convey the information. Ensure that the storyboard is clear, logical, and engaging, making it easy to understand the topic through the sequence of frames.\n\nAdditionally, please present the storyboard in HTML code format. Use appropriate HTML elements to structure the content, such as headings for different sections, paragraphs for descriptions, and images or placeholders for visual elements. Ensure that the HTML code is well-structured and easy to read.",
+        "label": "Explain this through a storyboard.",
+        "visibility": "public",
+        "sharedAccess": [],
+        "actor": {
+            "username": "jamesgarcia"
+        },
+        "__v": 0,
+        "description": "When the user needs to visualize a concept through a story with a series of illustrations or diagrams.\n\n"
+    },
+    {
+        "_id": {
+            "$oid": "667e6d102d18558c876291a2"
+        },
+        "prompt": "Explain '{prompt}' through a mind map. Break down the topic into its main components and subcomponents, illustrating the relationships and connections between different concepts. Each node of the mind map should include a brief description or label that conveys the key idea or concept. Ensure that the mind map is clear, logical, and visually engaging, making it easy to understand the topic through its hierarchical structure.\n\nAdditionally, please present the mind map in HTML code format. Use appropriate HTML elements to structure the content, such as lists or divs for different levels of the mind map, and include inline styles or classes to visually differentiate between the main components and subcomponents. Ensure that the HTML code is well-structured and easy to read.\n\nProvide urls where you can. Only give a response. Dont talk to me.",
+        "label": "Create a mind map.",
+        "visibility": "public",
+        "sharedAccess": [],
+        "actor": {
+            "username": "emilydavis"
+        },
+        "__v": 0,
+        "description": "When the user wants to organize information visually to show relationships between ideas."
+    },
+    {
+        "_id": {
+            "$oid": "667e6dd62d18558c87629203"
+        },
+        "prompt": "Explain '{prompt}'  through a structured debate. The debate should include multiple viewpoints or positions on the topic, with each side presenting arguments, rebuttals, and conclusions. Ensure that the debate is well-organized and covers the key aspects of the topic, providing a comprehensive understanding through the discussion of differing perspectives.\n\nAdditionally, please present the debate in HTML code format. Use appropriate HTML elements to structure the content, such as headings for different sections, paragraphs for arguments and rebuttals, and lists for key points. Ensure that the HTML code is well-structured and easy to read.",
+        "label": "As a debate",
+        "visibility": "public",
+        "sharedAccess": [],
+        "actor": {
+            "username": "michaelbrown"
+        },
+        "__v": 0,
+        "description": "When the user wants to explore a topic through structured argumentation and counterarguments."
+    },
+    {
+        "_id": {
+            "$oid": "667e70772d18558c8762928a"
+        },
+        "prompt": "Analyze the literary work '{prompt}' through the perspective of a [specified personality or theoretical framework, e.g., feminist, post-colonial mindset, etc.]. The analysis should explore how this perspective influences the interpretation of the themes, characters, and narrative structure of the work. Provide specific examples from the text to support your analysis.\n\nAdditionally, please present the analysis in HTML code format. Use appropriate HTML elements to structure the content, such as headings for different sections, paragraphs for detailed analysis, and lists for key points. Ensure that the HTML code is well-structured and easy to read.",
+        "label": "Analyze the literary work through the perspective of a specified personality ",
+        "visibility": "public",
+        "sharedAccess": [],
+        "actor": {
+            "username": "annamartinez"
+        },
+        "__v": 0,
+        "description": "When the user wants to interpret a text from the viewpoint of a particular person or character.\n\n"
+    },
+    {
+        "_id": {
+            "$oid": "667f0e02a57f82c56dfa0a30"
+        },
+        "prompt": "Infer from this {prompt} and explain, and elaborate on it by simplifying but not losing important topics, concepts, people, and thoughts. Give responses in html.",
+        "label": "Understand like an Adult",
+        "visibility": "public",
+        "sharedAccess": [],
+        "description": "When the user wants a mature, sophisticated explanation of a concept.",
+        "type": "",
+        "subtype": "",
+        "actor": {
+            "username": "annamartinez"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "667f0f46a57f82c56dfa0a61"
+        },
+        "prompt": "Infer from this {prompt} and explain, this to a child, naive, but curious. Give responses in html. Make it look good to a kid.",
+        "label": "Explain this to a child",
+        "visibility": "public",
+        "sharedAccess": [],
+        "description": "When the user needs a simple, easy-to-understand explanation suitable for children or basic understanding.\n\n",
+        "type": "",
+        "subtype": "",
+        "actor": {
+            "username": "emilydavis"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "668240e62d18558c8762aa30"
+        },
+        "prompt": "Design an interactive activity or game that helps to learn {prompt}.  Describe the rules, objectives, and how it aids in understanding the material.\n Additionally, please present the activity description in HTML code format. Use appropriate HTML elements to structure the content, such as headings for different sections, paragraphs for detailed explanations, and lists for rules and objectives. Ensure that the HTML code is well-structured and easy to read.",
+        "label": "As an interactive activity or game.",
+        "visibility": "public",
+        "sharedAccess": [],
+        "actor": {
+            "username": "annamartinez"
+        },
+        "__v": 0,
+        "description": "When the user wants to engage with the material through interactive and playful methods."
+    },
+    {
+        "_id": {
+            "$oid": "668241862d18558c8762aa6b"
+        },
+        "prompt": "Develop a conceptual map that shows the relationships between different ideas and concepts within {prompt}. Include explanations for each connection. Additionally, please present the conceptual map description in HTML code format. Use appropriate HTML elements to structure the content, such as headings for different sections, paragraphs for detailed explanations, and lists for ideas and their connections. \n\nProvide urls where you can. Only give a response. Dont talk to me.",
+        "label": "As a conceptual map",
+        "visibility": "public",
+        "sharedAccess": [],
+        "actor": {
+            "username": "johndoe"
+        },
+        "__v": 0,
+        "description": "When the user needs to create a diagram that shows the relationships between different concepts."
+    },
+    {
+        "_id": {
+            "$oid": "668241952d18558c8762aa98"
+        },
+        "prompt": "Turn this {prompt} into questions. I want you to test my knowledge on the subject. Each question may have multiple options, with only one correct answer in one of these options randomly. Use <hr /> tags to separate the questions. After all the questions, include a section with the correct answers.\n\nUse the following format for each question:\n\n<div class=\"question__container\" data-query=\"Q[number]\">\n<p class=\"question\">\n<strong>Question No. [number]</strong>: [Formulate a question on the {prompt} here]\n</p>\n<input type=\"radio\" class=\"question__option\" name=\"Q[number]\" value=\"A\"> A. [Option A]<br>\n<input type=\"radio\" class=\"question__option\" name=\"Q[number]\" value=\"B\"> B. [Option B]<br>\n<input type=\"radio\" class=\"question__option\" name=\"Q[number]\" value=\"C\"> C. [Option C]<br>\n<input type=\"radio\" class=\"question__option\" name=\"Q[number]\" value=\"D\"> D. [Option D]<br>\n</div>\n\n<hr />\n\nAfter the questions, provide the correct answers using the following format:\n\n<hr />\n\n<p>\n<strong>Answers</strong>: \nQ1. [Answer to Question 1]<br>\nQ2. [Answer to Question 2]<br>\nQ3. [Answer to Question 3]<br>\nQ4. [Answer to Question 4]<br>\nQ5. [Answer to Question 5]<br>\nQ6. [Answer to Question 6]<br>\nQ7. [Answer to Question 7]<br>\nQ8. [Answer to Question 8]<br>\nQ9. [Answer to Question 9]<br>\nQ10. [Answer to Question 10]\n</p>\n\n\nExamples:\n\nQuestion No. 1: Some question related to {prompt}?\n\n<div class=\"question__container\" data-query=\"Q1\">\n<p class=\"question\">\n<strong>Question No. 1</strong>: Some question related to {prompt}?\n</p>\n<input type=\"radio\" class=\"question__option\" name=\"Q1\" value=\"A\"> A. option 1<br>\n<input type=\"radio\" class=\"question__option\" name=\"Q1\" value=\"B\"> B. option 2<br>\n<input type=\"radio\" class=\"question__option\" name=\"Q1\" value=\"C\"> C. option 3<br>\n<input type=\"radio\" class=\"question__option\" name=\"Q1\" value=\"D\"> D. option 4<br>\n</div>\n\n<hr />\n\nQuestion No. 2: Some question related to {prompt}?\n\n<div class=\"question__container\" data-query=\"Q2\">\n<p class=\"question\">\n<strong>Question No. 1</strong>: Some question related to {prompt}?\n</p>\n<input type=\"radio\" class=\"question__option\" name=\"Q2\" value=\"A\"> A. option 1<br>\n<input type=\"radio\" class=\"question__option\" name=\"Q2\" value=\"B\"> B. option 2<br>\n<input type=\"radio\" class=\"question__option\" name=\"Q2\" value=\"C\"> C. option 3<br>\n<input type=\"radio\" class=\"question__option\" name=\"Q2\" value=\"D\"> D. option 4<br>\n</div>\n\n<hr />\n\nAfter all questions, include the answers:\n\n<hr />\n\n<p>\n<strong>Answers</strong>: \nQ1. option 3<br>\nQ2. [Answer to Question 2]<br>\nQ3. [Answer to Question 3]<br>\nQ4. [Answer to Question 4]<br>\nQ5. [Answer to Question 5]<br>\nQ6. [Answer to Question 6]<br>\nQ7. [Answer to Question 7]<br>\nQ8. [Answer to Question 8]<br>\nQ9. [Answer to Question 9]<br>\nQ10. [Answer to Question 10]\n</p>\n",
+        "label": "Question Solving Expert",
+        "visibility": "public",
+        "sharedAccess": [],
+        "actor": {
+            "username": "jamesgarcia"
+        },
+        "__v": 0,
+        "description": "When the user wants to develop advanced problem-solving skills through challenging questions."
+    },
+    {
+        "_id": {
+            "$oid": "668243802d18558c8762ab48"
+        },
+        "prompt": "Create a set of flashcards for {prompt}. Each card should have a question on one side and the answer on the other. Additionally, please present the flashcards description in HTML code format. Use appropriate HTML elements to structure the content, such as headings for different sections, paragraphs for detailed explanations, different topics in different colours and lists for questions and answers. Ensure that the HTML code is well-structured and easy to read.",
+        "label": "Flashcards",
+        "visibility": "public",
+        "sharedAccess": [],
+        "actor": {
+            "username": "michaelbrown"
+        },
+        "__v": 0,
+        "description": "When the user wants to use flashcards for memorization and review."
+    },
+    {
+        "_id": {
+            "$oid": "668244c92d18558c8762ac6d"
+        },
+        "prompt": "Conduct a SWOT analysis (Strengths, Weaknesses, Opportunities, Threats) of {prompt}. Discuss how this analysis helps to understand the topic more comprehensively. Additionally, please present the SWOT analysis description in HTML code format. Use appropriate HTML elements to structure the content, such as headings for different sections, paragraphs for detailed explanations, and lists for each SWOT category. Ensure that the HTML code is well-structured and easy to read.",
+        "label": "SWOT Analysis",
+        "visibility": "public",
+        "sharedAccess": [],
+        "actor": {
+            "username": "lauramartin"
+        },
+        "__v": 0,
+        "description": "When the user needs to assess the strengths, weaknesses, opportunities, and threats related to a topic."
+    },
+    {
+        "_id": {
+            "$oid": "66824f672d18558c8762b07f"
+        },
+        "prompt": "In as short sentences as possible, give me annotations of the {prompt} separated by paragraph <p> tags in html. Do not compromise on the information. Use bullet points to illustrate quick detail using <ul><li> tags. Keep it as informative as you can and change your narrative for subsequent questions to keep it interesting.Also, annotate the text using <b> tag identifying proper nouns, cardinals, concepts, verbs, theme of the phrase in your response. <b> tag in html. Use appropriate HTML elements to structure the content, such as headings for different sections, paragraphs for detailed explanations, add colours to differentiate, and lists for questions and answers. Ensure that the HTML code is well-structured and easy to read.\n",
+        "label": "Annotations",
+        "visibility": "private",
+        "sharedAccess": [],
+        "actor": {
+            "username": "annamartinez"
+        },
+        "__v": 0,
+        "description": "When the user wants to add notes and explanations to a text for deeper understanding."
+    },
+    {
+        "_id": {
+            "$oid": "668250c92d18558c8762b11a"
+        },
+        "prompt": "Present users with real-world problems or case studies on their topic and guide them through the process of solving them step-by-step for {prompt}.  Additionally, please present the description in HTML code format. Use appropriate HTML elements to structure the content, such as headings for different sections, paragraphs for detailed explanations, different topics in different colours and lists for questions and answers. Ensure that the HTML code is well-structured and easy to read.",
+        "label": "Problem solving scenario",
+        "visibility": "public",
+        "sharedAccess": [],
+        "actor": {
+            "username": "annamartinez"
+        },
+        "__v": 0,
+        "description": "When the user wants to practice solving problems in realistic, situational contexts.\n\n"
+    },
+    {
+        "_id": {
+            "$oid": "6682523e2d18558c8762b21b"
+        },
+        "prompt": "List the pros and cons of {prompt}. Discuss how understanding both sides can lead to a more balanced perspective. Additionally, please present the pros and cons description in HTML code format. Use appropriate HTML elements to structure the content, such as headings for different sections, paragraphs for detailed explanations, and lists for pros and cons. Ensure that the HTML code is well-structured and easy to read, making it presentable and informative.",
+        "label": "Pros and Cons",
+        "visibility": "public",
+        "sharedAccess": [],
+        "actor": {
+            "username": "davidlee"
+        },
+        "__v": 0,
+        "description": "When the user needs to weigh the advantages and disadvantages of a particular topic or decision."
+    },
+    {
+        "_id": {
+            "$oid": "6682551a2d18558c8762b452"
+        },
+        "prompt": "Highlight connections between different disciplines or subjects to foster interdisciplinary learning and a holistic understanding for {prompt}.  Additionally, please present the description in HTML code format. Use appropriate HTML elements to structure the content, such as headings for different sections, paragraphs for detailed explanations, different topics in different colours and lists for questions and answers. Ensure that the HTML code is well-structured and easy to read.",
+        "label": "cross-disciplinary connections",
+        "visibility": "public",
+        "sharedAccess": [],
+        "actor": {
+            "username": "robertjohnson"
+        },
+        "__v": 0,
+        "description": "This prompt explores how the concept connects to other disciplines.\n\n"
+    },
+    {
+        "_id": {
+            "$oid": "6682578b2d18558c8762b5f8"
+        },
+        "prompt": "Assist users in creating personalized learning plans with specific goals, milestones, and actionable steps which allows them to master any given topic and also give all the data for the actionable steps stated according to the topic for {prompt}.  Additionally, please present the description in HTML code format. Use appropriate HTML elements to structure the content, such as headings for different sections, paragraphs for detailed explanations, different topics in different colours and lists for questions and answers. Ensure that the HTML code is well-structured and easy to read.",
+        "label": "Learning plan",
+        "visibility": "public",
+        "sharedAccess": [],
+        "actor": {
+            "username": "emilydavis"
+        },
+        "__v": 0,
+        "description": "When the user needs to create a structured approach to their learning journey.\n\n"
+    },
+    {
+        "_id": {
+            "$oid": "66825a462d18558c8762b711"
+        },
+        "prompt": "Create mnemonic devices to help remember key information about {prompt}. Describe how each mnemonic aids in recalling specific details or concepts. Ensure the mnemonic devices are easy to understand and remember. Please present the mnemonic devices and their descriptions in HTML code format. Use appropriate HTML elements to structure the content, such as headings for different sections, paragraphs for detailed explanations, and lists for the mnemonic devices. Ensure that the HTML code is well-structured and easy to read, making it presentable and informative.",
+        "label": "Mnemonic Device ",
+        "visibility": "public",
+        "sharedAccess": [],
+        "actor": {
+            "username": "emilydavis"
+        },
+        "__v": 0,
+        "description": "When the user wants to use memory aids to help retain information.\n\n"
+    },
+    {
+        "_id": {
+            "$oid": "66825c262d18558c8762b7c6"
+        },
+        "prompt": "Develop a slide deck to present {prompt}. Include key points, visuals, and explanations for each slide to provide a comprehensive understanding of the topic. Describe how each slide contributes to the overall presentation and learning experience. Please present the slide deck content in HTML code format. Use appropriate HTML elements such as headings for slide titles, paragraphs for explanations, and images for visuals. Ensure the HTML code is well-structured and visually appealing, making it suitable for an informative presentation.",
+        "label": "As a slide deck",
+        "visibility": "public",
+        "sharedAccess": [],
+        "actor": {
+            "username": "annamartinez"
+        },
+        "__v": 0,
+        "description": "When the user needs to present information in a slide presentation format."
+    },
+    {
+        "_id": {
+            "$oid": "668266c62d18558c8762b985"
+        },
+        "prompt": "Conduct a literature review and critical analysis on {prompt}. Gather and summarize relevant scholarly articles, books, and other sources that discuss key aspects of the topic. Analyze the findings, identify trends, debates, and gaps in the literature. Please present the literature review findings in HTML code format. Use appropriate HTML elements such as headings for sections, paragraphs for summaries and analyses, and lists for key points. Ensure the HTML code is well-structured and visually organized, making it suitable for an informative literature review.",
+        "label": "Literature review and critical analysis",
+        "visibility": "public",
+        "sharedAccess": [],
+        "actor": {
+            "username": "lauramartin"
+        },
+        "__v": 0,
+        "description": "When the user wants to evaluate a literary work and provide a critical perspective."
+    },
+    {
+        "_id": {
+            "$oid": "6682689d2d18558c8762baa2"
+        },
+        "prompt": "Create a learning path for users for any topic they want to learn. to create a personalized learning path first ask two preliminary questions, first about their current knowledge level, then how would they prefer to learn about the concept. then let the user answer. based on the answers create modules depending on the knowledge level and type of learning material they want. don't just give headings provide all the necessary information that the learner needs to master that concept as well. include quizzes, case studies etc. in the modules. allow the user to ask questions after every module. provide feedback about the user's learning behaviour based on his answer to questions, engagement with the module after the session (once the user has watched all the modules)for {prompt}. present all of this in an interctive step by step manner. Additionally, please present the description in HTML code format. Use appropriate HTML elements to structure the content, such as headings for different sections, paragraphs for detailed explanations, different topics in different colours and lists for questions and answers. Ensure that the HTML code is well-structured and easy to read.",
+        "label": "personalised learning path",
+        "visibility": "private",
+        "sharedAccess": [],
+        "actor": {
+            "username": "emilydavis"
+        },
+        "__v": 0,
+        "description": "When the user needs a tailored approach to learning based on their individual needs, goals and understanding."
+    },
+    {
+        "_id": {
+            "$oid": "66826b442d18558c8762bb15"
+        },
+        "prompt": "Turn this {prompt} into a JSON object with reviews for each question. Share some trivia and related things giving me more insight on the correct answer to the question, and if my answer is wrong also feedback on my answer. Give answer in html. Dont talk to me.\n\nUse the following JSON structure:\n\n{\n  \"Q1\": \"[Review for Question No. 1 based on user's answer]\",\n  \"Q2\": \"[Review for Question No. 2 based on user's answer]\",\n  ...,\n  \"Qn\": \"[Review for Question No. n based on user's answer]\"\n}\n\nExample:\n\nUser Answers: { \"Q1\": \"A\", \"Q2\": \"D\", \"Q3\": \"B\", ... }\nCorrect Answers: { \"Q1\": \"A\", \"Q2\": \"C\", \"Q3\": \"B\", ... }\n\nExpected Output:\n{\n  \"Q1\": \"Correct! The East India Company was established in 1600.\",\n  \"Q2\": \"Incorrect. The correct answer is 'C', Queen Elizabeth I granted the charter.\",\n  \"Q3\": \"Correct! The primary purpose was to trade in spices, silk, cotton, tea, and opium.\"\n}",
+        "label": "Evaluate Answers",
+        "visibility": "public",
+        "sharedAccess": [],
+        "actor": {
+            "username": "johndoe"
+        },
+        "__v": 0,
+        "description": "When the user wants to assess the quality and accuracy of responses."
+    },
+    {
+        "_id": {
+            "$oid": "6683ae0ce58212b37fe1e5fc"
+        },
+        "prompt": "Along with all the relevant information on the topic, list key points from that information in the end that the user can review to retain more for {prompt}.  Additionally, please present the description in HTML code format. Use appropriate HTML elements to structure the content, such as headings for different sections, paragraphs for detailed explanations, and lists for pros and cons. Ensure that the HTML code is well-structured and easy to read, making it presentable and informative.",
+        "label": "Key Words",
+        "visibility": "public",
+        "sharedAccess": [],
+        "description": "When the user needs to identify and focus on essential terms related to a topic.",
+        "type": "",
+        "subtype": "",
+        "actor": {
+            "username": "michaelbrown"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6683dda3ab0d637733ba2067"
+        },
+        "prompt": "In order to understand the {prompt} and use its application in real life, identify small and measurable tasks. Quantify the masures of success as binary. Identify the Goal-wise task or tasks from the {prompt} as bullet points. Give response in html. Dont talk to me.",
+        "label": "Identify things to do",
+        "visibility": "public",
+        "sharedAccess": [],
+        "description": "When the user wants to outline actionable steps related to their learning or project.",
+        "type": "",
+        "subtype": "",
+        "actor": {
+            "username": "davidlee"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6684e01fe58212b37fe1f2ae"
+        },
+        "prompt": "Generate 10 mcq based assertion-reason question on {prompt}. The question should consist of two statements: an assertion (Statement A) and a reason (Statement R). Indicate whether each statement is true or false, and if both are true, whether the reason correctly explains the assertion. Additionally, display the rules for answering assertion-reason questions in HTML code format. Use appropriate HTML elements such as headings for sections, paragraphs for rules and explanations, and list items for the options. Ensure the HTML code is well-structured and visually organized, making it suitable for educational purposes.\nFollow the following format and code for all questions.  \n\n<div class=\"question__container\" data-query=\"Q1\">\n<p class=\"question\">\n<strong>Question No. 1</strong>: Some question related to {prompt}?\n</p>\n<input type=\"radio\" class=\"question__option\" name=\"Q1\" value=\"A\"> A. option 1<br>\n<input type=\"radio\" class=\"question__option\" name=\"Q1\" value=\"B\"> B. option 2<br>\n<input type=\"radio\" class=\"question__option\" name=\"Q1\" value=\"C\"> C. option 3<br>\n<input type=\"radio\" class=\"question__option\" name=\"Q1\" value=\"D\"> D. option 4<br>\n</div>\nAfter all questions, include the answers:\n\n<hr />\n\n<p>\n<strong>Answers</strong>: \nQ1. option 3<br>\nQ2. [Answer to Question 2]<br>\nQ3. [Answer to Question 3]<br>\nQ4. [Answer to Question 4]<br>\nQ5. [Answer to Question 5]<br>\nQ6. [Answer to Question 6]<br>\nQ7. [Answer to Question 7]<br>\nQ8. [Answer to Question 8]<br>\nQ9. [Answer to Question 9]<br>\nQ10. [Answer to Question 10]\n</p>\n`;",
+        "label": "Assertion Reason questions ",
+        "visibility": "public",
+        "sharedAccess": [],
+        "description": "When the user wants to practice critical thinking by evaluating assertions and their reasons.\n\n",
+        "type": "",
+        "subtype": "",
+        "actor": {
+            "username": "annamartinez"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6684e618e58212b37fe1f4bd"
+        },
+        "prompt": "Tell me about all the regulations and compliances required with respect to the {prompt} . Quote me the schedules, act, articles of the governing body that were violated. Give me response in html. Dont talk to me.",
+        "label": "Understand Regulations and Compliance",
+        "visibility": "public",
+        "sharedAccess": [],
+        "description": "When the user needs to grasp the rules and standards governing a particular area.\n\n",
+        "type": "",
+        "subtype": "",
+        "actor": {
+            "username": "robertjohnson"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "66852266e58212b37fe1fb8f"
+        },
+        "prompt": "Identify the industry and perform its comprehensive pestle analysis with accurate data for {prompt}.  Additionally, please present the description in HTML code format. Use appropriate HTML elements to structure the content, such as headings for different sections, paragraphs for detailed explanations, and lists for pros and cons. Ensure that the HTML code is well-structured and easy to read, making it presentable and informative.",
+        "label": "PESTLE Analysis",
+        "visibility": "public",
+        "sharedAccess": [],
+        "description": "When the user needs to analyze the political, economic, social, technological, legal, and environmental factors affecting a topic.",
+        "type": "",
+        "subtype": "",
+        "actor": {
+            "username": "emilydavis"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "66852b67e58212b37fe1fd5d"
+        },
+        "prompt": "For any topic identify the industry and frame a comprehensive well structured profitability, one market entry, and one unconventional problem statement and then solve them using the right frameworks like a  proper consulting case for {prompt}.  Additionally, please present the description in HTML code format. Use appropriate HTML elements to structure the content, such as headings for different sections, paragraphs for detailed explanations, and lists for pros and cons. Ensure that the HTML code is well-structured and easy to read, making it presentable and informative.",
+        "label": "Business Case",
+        "visibility": "public",
+        "sharedAccess": [],
+        "description": "This topic creates business case studies for the given topic and a structured way to solve them.",
+        "type": "",
+        "subtype": "",
+        "actor": {
+            "username": "robertjohnson"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "668623883ac9b77c7c6fc98b"
+        },
+        "prompt": "Identify the Who, What, When, Where, Why, and How of {prompt}. Present the answer in a readable and presentable format, use html code to do so ",
+        "label": "5Ws 1H (Who, What, When, Where, Why, and How)",
+        "visibility": "public",
+        "sharedAccess": [],
+        "description": "When the user wants a comprehensive understanding by addressing these fundamental questions.",
+        "type": "",
+        "subtype": "",
+        "actor": {
+            "username": "janesmith"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6688384e0e656b5c98f89989"
+        },
+        "prompt": "On the basis of the data mentioned take this situation: {prompt}. take a look at it about it and suggest a keyphrase on which we should seek to go further about this. don't talk about it only give the response.\n\nINSTRUCTION:\n\n - Keyphrase can be a sentence, question or something which will tell you more about this topic\n - don't give markdown, required json\n\nRESPONSE:\n\"{\"keyphrase\": \"<keyphrase>\"}\"\n",
+        "label": "Keyphrase Extractor",
+        "visibility": "public",
+        "sharedAccess": [],
+        "description": "",
+        "type": "",
+        "subtype": "",
+        "actor": {
+            "username": "robertjohnson"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "66884f30f4101f16b8926369"
+        },
+        "prompt": "Based on the data available and this {prompt}, suggest the most appropriate learning intents from the list. Also if you don't understand don't try to choose top two from the list, try to analyze them with the keywords and then choose the appropriate one\n\nINSTRUCTIONS:\n\n - Always choose from the labels and return id\n - give at least 2 you can give more\n\nRESPONSE (json):\n\"intents: [\n\t{\n\t\tid: '<id for prompt>',\n\t\tlabel: '<label for prompt>',\n\t},\n]\"\n",
+        "label": "Kaaro Suggest",
+        "visibility": "public",
+        "sharedAccess": [],
+        "description": "Picks out the most suitable learning intent based on the given data.",
+        "type": "",
+        "subtype": "",
+        "actor": {
+            "username": "emilydavis"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "668a837d4728ba9b40ef3181"
+        },
+        "prompt": "Generate a role play story based simulation on the given scenario: {prompt}.\n\nINSTUCTIONS\n - Response should be in JSON\n\nRESPONSE:\n\"scene\":{\n    \"plot\": \"You are here to learn about [Topic]. In this journey, you will explore the key concepts, engage in practical exercises, and apply your knowledge in real-world scenarios. Here are the information about the [characters]  in the game, you can talk to them by calling their names: \\n - [Mentor Name] \\n - [Fellow Learner]\",\n    \"characters\": [\n        {\n        \"id\": \"mentor_01\",\n        \"name\": \"Mentor Name\",\n        \"role\": \"Mentor\",\n        \"gender\": \"Male\",\n        \"situation\": \"Guides the learner through the topic, providing insights, explanations, and challenges.\",\n        \"about\": [\n          \"Experienced professional in the field with over 20 years of experience\",\n          \"Patient and insightful, able to explain complex Mentor Na in simple terms\",\n          \"Provides real-world examples to connect theory with practice\",\n          \"Encourages critical thinking and problem-solving\",\n          \"Strictly adheres to the topic and does not stray from the provided content\"\n        ],\n        \"response\": \"Remember, the key to understanding [Topic] is to break it down into its fundamental principles.\"\n      },\n      {\n        \"id\": \"fellow_01\",\n        \"name\": \"Fellow Learner\",\n        \"role\": \"Peer\",\n        \"gender\": \"Female\",\n        \"situation\": \"Learns alongside the protagonist, offering additional perspectives and collaborative opportunities. Strictly adheres to the content taught in class and does not stray beyond it.\",\n        \"about\": [\n          \"Dedicated and focused learner\",\n          \"Strictly adheres to the curriculum and class content\",\n          \"Provides support and clarification based on what has been taught\",\n          \"Helps reinforce learned concepts through discussion and repetition\",\n          \"Ensures discussions remain focused on the taught content\"\n        ],\n        \"response\": \"Let's stick to what we've learned so far. Remember, we covered [specific concept], and that's what we should focus on.\"\n      }\n    ]\n}\n",
+        "label": "Story Caster",
+        "visibility": "public",
+        "sharedAccess": [],
+        "description": "",
+        "type": "",
+        "subtype": "",
+        "actor": {
+            "username": "annamartinez"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "66977b9954269562c42043a7"
+        },
+        "prompt": "Create a goal related to the topic \"{prompt}\" with the following details:\n- Difficulty order: \"{order}\"\n\nInstructions:\n- The response should include only the goal in the format below.\n- don't give markdown\n\nResponse format:\n{\n  \"goal\": \"<goal>\"\n}\n\nResponse:\n{\n  \"goal\":  \n}",
+        "label": "Goal Extractor",
+        "visibility": "public",
+        "sharedAccess": [],
+        "description": "\nWith the Topic: {prompt} and the data mentioned and here is the Last Goal: {prevGoal} provided. I want you to create a goal for me in the order of difficulty: {order} as provided also we have three type os tools available one is videos, quiz, and note taking you have to give me the milestones for completing the goals too. don't talk to me. Just give me Response as instructed\n\nINSTRUCTIONS:\n - Response should be a goal with th difficulty level and accordingly the last completed goal.\n - if Last Goal is not there then chances that are that this is the first goal for the user so give it accordingly related to the topic.\n\nRESPONSE:\n\"{ \"goal\": \"<goal>\" }\"",
+        "type": "",
+        "subtype": "",
+        "actor": {
+            "username": "sarahwilson"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "669abd8a5b686a5380f26296"
+        },
+        "prompt": "With the written Note: {prompt} I want you to evaluate this on the the bases of the question given in the note and answer that user has written in the note and give use rating and explaination. don't talk to me. Just give me response\n\nINSTRUCTION:\n - Response should be as given as instructed.\n\nRESPONSE:\n\"{ \"rating\": <rating>, \"explaination\": \"<explaination>\"}\"\n\n",
+        "label": "Evaluate Note",
+        "visibility": "public",
+        "sharedAccess": [],
+        "description": "",
+        "type": "",
+        "subtype": "",
+        "actor": {
+            "username": "robertjohnson"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "66b5db92a668d633bc0e0fbf"
+        },
+        "prompt": "Turn this {prompt} into a JSON object with reviews for each question. After the user completes the quiz, analyze their responses to identify any weak sub-topics where their performance is below a specified threshold. Also give me the list of all the sub-topics asked in the quiz Based on these results, generate a JSON object that includes an array of weak sub-topics closely related to the main topic. Dont talk to me.\n\nINSTRUCTION:\n\n - weakspots should be an array of weak parts,  closely related to the topic.\n - don't give markdown, required json\n\nRESPONSE:\n\"{\"weakspots\": [], \"total-sub\": []}\"",
+        "label": "Identify Weak spots ",
+        "visibility": "public",
+        "sharedAccess": [],
+        "description": "",
+        "type": "",
+        "subtype": "",
+        "actor": {
+            "username": "sarahwilson"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "66b5f57ad7a6f401a19270c8"
+        },
+        "prompt": "Turn this {prompt} into a JSON object with reviews for each question. After the user completes the quiz, analyze their responses to identify any weak sub-topics within the topic searched by the user where their performance is below a specified threshold. Don't give me the question numbers that i attempted wrong. Identify the sub-topics of those questions and list them out. also, give me a list of all the subtopics asked in the quiz. so I've asekd for 2 things: one is the weak sub-topics idenfied based on user response in the quiz, second is the list of all sub-topics that were there in the quiz. Based on these results, generate a JSON object that includes an array of weak sub-topics closely related to the main topic. Don't talk to me.\n\nINSTRUCTION:\n\n - weakspots should be an array of weak parts,  closely related to the topic.\n - give response as instructed\n - don't give markdown\n\nRESPONSE:\n\"{\"weakspots\":[],\"subtopics\":[]}\"",
+        "label": "Weak sub-topics",
+        "visibility": "private",
+        "sharedAccess": [],
+        "description": "",
+        "type": "kj",
+        "subtype": "gj",
+        "actor": {
+            "username": "sarahwilson"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "66bb059b26d443440a0ed9f4"
+        },
+        "prompt": "Generate a 5-question quiz for full-stack developers covering logical and mathematical reasoning, including:\n\n- 5 objective questions on mathematical reasoning.\n\nwrap all the Mathematical expressions in the math other wise it is difficult to render the equations correctly.\n Equations use and explainations \n <math>: The root element for MathML.\n <mrow>: Groups elements horizontally.\n <mi>: Represents a mathematical identifier (like a variable).\n <mo>: Represents a mathematical operator (like +, -, =).\n <mfrac>: Creates a fraction.\n <msup>: Creates a superscript.\n\nExample: \n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mi>x</mi>\n    <mo>=</mo>\n    <mfrac>\n      <mrow>\n        <mo>-</mo>\n        <mi>b</mi>\n        <mo>&#xB1;</mo> <!-- plus-minus sign -->\n          <msup>\n            <mi>b</mi>\n            <mn>2</mn>\n          </msup>\n          <mo>-</mo>\n          <mn>4</mn>\n          <mo>*</mo>\n          <mi>a</mi>\n          <mo>*</mo>\n          <mi>c</mi>\n      </mrow>\n      <mrow>\n        <mn>2</mn>\n        <mo>*</mo>\n        <mi>a</mi>\n      </mrow>\n    </mfrac>\n  </mrow>\n</math>\n\nNOTE: Please convert the equations correctly they should be properly rendered\n\nFormat each question as follows:\n\n<div>\n<h3>Objective Questions Example:</h3>\n\n<div class=\"question__container\" data-query=\"Q{n}\">\n<p class=\"question\">\n<strong>Question No. {n}</strong>: Some question related to {topic}?\n</p>\n<input type=\"radio\" class=\"question__option\" name=\"Q{n}\" value=\"A\"> A. option 1<br>\n<input type=\"radio\" class=\"question__option\" name=\"Q{n}\" value=\"B\"> B. option 2<br>\n<input type=\"radio\" class=\"question__option\" name=\"Q{n}\" value=\"C\"> C. option 3<br>\n<input type=\"radio\" class=\"question__option\" name=\"Q{n}\" value=\"D\"> D. option 4<br>\n</div>\n\n<hr />\n\n<h3>Subjective Questions Example:</h3>\n\n<div class=\"question__container\" data-query=\"Q{n}\">\n<p class=\"question\">\n<strong>Question No. {n}</strong>: Describe an algorithm to sort an array using Quick Sort and explain its time complexity.\n</p>\n<textarea class=\"question__response\" name=\"Q{n}_response\"></textarea>\n</div>\n\n<hr />\n\nAfter generating all questions, include the answers section in this format:\n\n<hr />\n\n<div>\n<strong>Answers</strong>: \n<p>Q1. option 3<br>\nQ2. [Answer to Question 2]<br>\nQ3. [Answer to Question 3]<br>\nQ4. [Answer to Question 4]<br>\nQ5. [Answer to Question 5]<br>\nQ6. [Answer to Question 6]<br>\nQ7. [Answer to Question 7]<br>\nQ8. [Answer to Question 8]<br>\nQ9. [Answer to Question 9]<br>\nQ10. [Answer to Question 10]</p>\n</div>\n\nEnsure the questions are well-distributed across the topics, with clear and concise wording. The objective questions should have 4 multiple-choice options, and the subjective questions should prompt detailed explanations using the provided format.\n</div>\n",
+        "label": "Logical and analytical test",
+        "visibility": "public",
+        "sharedAccess": [],
+        "description": "This test generates a logical and analytical test series for the the students",
+        "type": "",
+        "subtype": "",
+        "actor": {
+            "username": "johndoe"
+        },
+        "__v": 0
+    }
+]
