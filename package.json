@@ -1,11 +1,16 @@
 {
   "name": "assessment",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "fluent-json-schema": "^5.0.0"
+  }
 }

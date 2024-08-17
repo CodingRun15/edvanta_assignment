@@ -1,15 +1,49 @@
 const prompts = require("./prompts.json");
 const users = require("./users.json");
-
+const Ajv = require('ajv');
+const ajv = new Ajv();
+// const promptSchema = {
+//   prompt: { type: "string", required: true },
+//   label: { type: "string", required: true },
+//   visibility: { type: "string", enum: ["public", "private", "custom"], required: true },
+//   actor: {
+//     username: { type: "string", required: true },
+//   },
+//   sharedAccess: { type: [], default: [] },  // Define the sharedAccess array
+// };
 const promptSchema = {
-  prompt: { type: String, required: true },
-  label: { type: String, required: true },
-  visibility: { type: String, enum: ["public", "private", "custom"], required: true },
-  actor: {
-    username: { type: String, required: true },
+  type: "object",
+  properties: {
+    prompt: {
+      type: "string",
+    },
+    label: {
+      type: "string",
+    },
+    visibility: {
+      type: "string",
+      enum: ["public", "private", "custom"],
+    },
+    actor: {
+      type: "object",
+      properties: {
+        username: {
+          type: "string",
+        }
+      }
+    },
+    description: {
+      type: "string"
+    },
+    sharedAccess: {
+      type: "array",
+      items: {
+        type: "string"
+      },
+      default: []
+    }
   },
-  description: { type: String },
-  sharedAccess: { type: Array, default: [] },  // Define the sharedAccess array
+  required: ["prompt", "label", "visibility", "actor"]
 };
 
 class Prompts {
@@ -20,14 +54,13 @@ class Prompts {
   }
 
   create(newPrompt) {
-    const user = this.users.find(
-      (user) => user.username === newPrompt.actor.username
-    );
-    if (user) {
-      this.prompts.push(newPrompt);
-      return "Prompt added";
+    const validate = ajv.compile(this.schema);
+    const valid = validate(newPrompt);
+    if(!valid){
+      return validate.errors;
     }
-    return "User not found";
+    this.prompts.push(newPrompt);
+    return "Prompt added";
   }
 
   get(username) {
@@ -47,30 +80,23 @@ class Prompts {
 
     return "User not found";
   }
-
   getAll() {
-    return this.prompts.filter((prompt) => prompt.visibility !== "private");
+    return this.prompts.filter((prompt) => prompt.visibility === "public");
   }
 
-  share(id, username) {
-    const user = this.users.find((user) => user.username === username);
-    if (!user) {
+  share(username) {
+    const user = this.prompts.find((prompt) => prompt.actor.username === username);
+    if (user) {
       return "User not found";
     }
-
-    const prompt = this.prompts.find((prompt) => prompt._id.$oid === id);
-    if (!prompt) {
-      return "Prompt not found";
-    }
-
+    for(let prompt in this.prompts){
     if (prompt.sharedAccess.includes(username)) {
       return "User already has access to the prompt";
     }
-
     prompt.sharedAccess.push(username);
     return { message: "Prompt shared", prompt };
   }
-
+}
   deleteAll() {
     this.prompts = [];
     return "All prompts deleted";
@@ -78,8 +104,15 @@ class Prompts {
 }
 
 let prompt = new Prompts();
-let result = prompt.share("johndoe", "stephen hawkins");
+let result = prompt.create({
+  prompt: "Sample Prompt",
+  label: "Sample Label",
+  visibility: "public",
+  actor: { username: "harsh" },
+  description: "This is a sample prompt",
+});
 console.log(result);
+console.log(prompt.prompts.find(prompt=>prompt.actor.username === "harsh"));
 
 
 // print prompts
